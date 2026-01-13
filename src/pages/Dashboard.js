@@ -67,7 +67,7 @@ const Dashboard = () => {
           <div className="title-icon"><LayoutDashboard size={28} color="#7b00ff" /></div>
           <h1>Dashboard</h1>
         </div>
-        <button className="btn-deploy">
+        <button className="btn-deploy" onClick={() => navigate('/dashboard/deploy')}>
           <Plus size={18} /> Deploy now
         </button>
       </div>

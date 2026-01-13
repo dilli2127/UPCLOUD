@@ -1,17 +1,22 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { 
   Server, Search, Filter, RefreshCw, Smartphone, Monitor 
 } from 'lucide-react';
-import serverData from '../data/servers.json';
+import { serverService } from '../services/serverService';
 import './Servers.css';
 
 import { useNavigate } from 'react-router-dom';
 
 const Servers = () => {
   const [searchTerm, setSearchTerm] = useState('');
+  const [servers, setServers] = useState([]);
   const navigate = useNavigate();
   
-  const filteredServers = serverData.filter(server => 
+  useEffect(() => {
+      serverService.getServers().then(setServers);
+  }, []);
+
+  const filteredServers = servers.filter(server => 
     server.name.toLowerCase().includes(searchTerm.toLowerCase()) || 
     server.ip.includes(searchTerm) ||
     server.location.toLowerCase().includes(searchTerm.toLowerCase())
@@ -24,9 +29,9 @@ const Servers = () => {
           <div className="icon-box">
              <Server size={24} color="#7b00ff" />
           </div>
-          <h1>Servers <span className="count-badge">TOTAL {serverData.length}</span></h1>
+          <h1>Servers <span className="count-badge">TOTAL {servers.length}</span></h1>
         </div>
-        <button className="btn-primary-action">Deploy server</button>
+        <button className="btn-primary-action" onClick={() => navigate('/dashboard/deploy')}>Deploy server</button>
       </div>
 
       <div className="filters-bar">

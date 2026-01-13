@@ -1,17 +1,62 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { ArrowLeft, Server, Activity, Terminal, Settings, HardDrive, Network } from 'lucide-react';
-import serverData from '../data/servers.json';
+import { serverService } from '../services/serverService';
 import './ServerDetail.css';
 
 const ServerDetail = () => {
     const { id } = useParams();
     const navigate = useNavigate();
-    
-    const server = serverData.find(s => s.id.toString() === id) || { 
-        name: 'Unknown', ip: 'N/A', location: 'N/A', status: 'stopped',
-        cpu: '1 CPU', memory: '1 GB', storage: '25 GB'
+    const [server, setServer] = useState(null);
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        const fetchServer = async () => {
+            const data = await serverService.getServerById(id);
+            if (!data) {
+                // Handle not found
+                alert("Server not found");
+                navigate('/dashboard/servers');
+                return;
+            }
+            setServer(data);
+            setLoading(false);
+        };
+        fetchServer();
+    }, [id, navigate]);
+
+    const handleAction = async (action) => {
+        if (!server) return;
+        
+        switch(action) {
+            case 'start':
+                const started = await serverService.updateServerStatus(id, 'running');
+                setServer(started);
+                break;
+            case 'stop':
+                const stopped = await serverService.updateServerStatus(id, 'stopped');
+                setServer(stopped);
+                break;
+            case 'restart':
+                // Simulate restart by stop then start
+                await serverService.updateServerStatus(id, 'stopped');
+                setTimeout(async () => {
+                   const restarted = await serverService.updateServerStatus(id, 'running');
+                   setServer(restarted);
+                }, 1000);
+                break;
+            case 'delete':
+                if (window.confirm(`Are you sure you want to delete ${server.name}?`)) {
+                    await serverService.deleteServer(id);
+                    navigate('/dashboard/servers');
+                }
+                break;
+            default:
+                break;
+        }
     };
+
+    if (loading) return <div style={{padding:'40px'}}>Loading server details...</div>;
 
     return (
         <div className="server-detail-page">
@@ -30,10 +75,13 @@ const ServerDetail = () => {
                 </div>
                 
                 <div className="sd-actions">
-                     <button className="btn-action start">Start</button>
-                     <button className="btn-action restart">Restart</button>
-                     <button className="btn-action stop">Stop</button>
-                     <button className="btn-action delete">Delete</button>
+                     {server.status === 'stopped' ? (
+                        <button className="btn-action start" onClick={() => handleAction('start')}>Start</button>
+                     ) : (
+                        <button className="btn-action stop" onClick={() => handleAction('stop')}>Stop</button>
+                     )}
+                     <button className="btn-action restart" onClick={() => handleAction('restart')}>Restart</button>
+                     <button className="btn-action delete" onClick={() => handleAction('delete')}>Delete</button>
                 </div>
             </div>
 

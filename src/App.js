@@ -34,6 +34,7 @@ import UsageNetworkTransfer from './pages/UsageNetworkTransfer';
 import UpCloudEssentials from './pages/UpCloudEssentials';
 import Account from './pages/Account';
 import ServerDetail from './pages/ServerDetail';
+import DeployServer from './pages/DeployServer';
 
 function App() {
   return (
@@ -49,6 +50,7 @@ function App() {
         <Route path="/dashboard" element={<DashboardLayout />}>
           <Route index element={<Dashboard />} />
           <Route path="account" element={<Account />} />
+          <Route path="deploy" element={<DeployServer />} />
           
           {/* Server Sub-routes */}
           <Route path="servers" element={<Navigate to="cloud" replace />} />
