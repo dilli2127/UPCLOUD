@@ -1,0 +1,122 @@
+.floating-ips-page {
+  padding-bottom: 40px;
+}
+
+.fip-header {
+  margin-bottom: 40px;
+}
+
+.fip-title {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.icon-box-ip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #7b00ff;
+  border-radius: 4px;
+}
+
+.ip-text {
+  color: #7b00ff;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.fip-title h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #111;
+}
+
+.fip-description {
+  color: #333;
+  margin-bottom: 15px;
+  max-width: 900px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.fip-link {
+  color: #333;
+  margin-bottom: 30px;
+  font-size: 0.95rem;
+}
+
+.fip-link a {
+  color: #7b00ff;
+  text-decoration: none;
+}
+
+.fip-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.btn-new-fip {
+  background-color: #7b00ff;
+  color: white;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-new-fip:hover {
+  background-color: #6a00dc;
+}
+
+.price-info {
+  font-size: 0.95rem;
+  color: #333;
+  font-weight: 600;
+}
+
+.price-val {
+  color: #7b00ff;
+  font-weight: 700;
+}
+
+.monthly-total {
+  margin-left: auto;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.purple-total {
+  color: #7b00ff;
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-left: 5px;
+}
+
+.fip-empty-state {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+  text-align: center;
+}
+
+.fip-empty-state h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #111;
+  margin-bottom: 8px;
+}
+
+.fip-empty-state p {
+  color: #666;
+  font-size: 0.95rem;
+}

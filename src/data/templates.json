@@ -1,0 +1,38 @@
+[
+  {
+    "name": "AlmaLinux 10",
+    "uuid": "01000000-0000-4000-8000-000141000200",
+    "arch": "64 bit",
+    "fee": "€0 CPU core / hour"
+  },
+  {
+    "name": "AlmaLinux 8",
+    "uuid": "01000000-0000-4000-8000-000140010100",
+    "arch": "64 bit",
+    "fee": "€0 CPU core / hour"
+  },
+  {
+    "name": "AlmaLinux 8.3 x86_64 Minimal Installation CD",
+    "uuid": "01000000-0000-4000-8000-000140010101",
+    "arch": "64 bit",
+    "fee": "€0 CPU core / hour"
+  },
+  {
+    "name": "AlmaLinux 9",
+    "uuid": "01000000-0000-4000-8000-000140020100",
+    "arch": "64 bit",
+    "fee": "€0 CPU core / hour"
+  },
+  {
+    "name": "Alpine 3.21.3 Installation CD",
+    "uuid": "01000000-0000-4000-8000-000180010101",
+    "arch": "64 bit",
+    "fee": "€0 CPU core / hour"
+  },
+  {
+    "name": "Arch Linux 2020.04.01 Installation CD",
+    "uuid": "01000000-0000-4000-8000-000180010101",
+    "arch": "64 bit",
+    "fee": "€0 CPU core / hour"
+  }
+]

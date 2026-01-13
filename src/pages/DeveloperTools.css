@@ -1,0 +1,172 @@
+.dev-tools-page {
+  padding-bottom: 40px;
+}
+
+.dt-header {
+  margin-bottom: 40px;
+  max-width: 800px;
+}
+
+.dt-header h1 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin-bottom: 15px;
+  color: #000;
+}
+
+.dt-header p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Grid Layout */
+.dt-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 20px;
+}
+
+.dt-card {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  display: flex;
+  overflow: hidden; /* For visuals */
+  min-height: 300px;
+}
+
+.dt-card-content {
+  flex: 1;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.dt-tag {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #7b00ff;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.dt-card-content h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 15px;
+}
+
+.dt-card-content p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 25px;
+  flex-grow: 1;
+}
+
+.dt-btn-group {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.btn-dt-action {
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-align: center;
+}
+
+.btn-dt-action.primary {
+  background-color: #7b00ff;
+  color: white;
+  border: none;
+}
+
+.btn-dt-action.primary:hover {
+  background-color: #6a00dc;
+}
+
+.btn-dt-action.outline {
+  background-color: white;
+  color: #7b00ff;
+  border: 1px solid #dcdcdc;
+}
+
+.btn-dt-action.outline:hover {
+  border-color: #7b00ff;
+}
+
+/* Visuals */
+.dt-card-visual {
+  flex: 1;
+  background-color: #f9f9f9;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; 
+}
+
+/* Specific visuals */
+.code-bg {
+  background-color: #1e1e1e;
+  color: #d4d4d4;
+  padding: 20px;
+  font-family: monospace;
+  font-size: 0.8rem;
+  line-height: 1.4;
+}
+
+.c-kwd { color: #569cd6; }
+
+.terminal-bg {
+  background-color: #1e1e1e;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.terminal-header {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 15px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.dot.r { background: #ff5f56; }
+.dot.y { background: #ffbd2e; }
+.dot.g { background: #27c93f; }
+
+.terminal-body {
+  color: #fff;
+  font-family: monospace;
+  font-size: 0.9rem;
+}
+
+.caret {
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+@media (max-width: 1100px) {
+  .dt-card {
+    flex-direction: column;
+  }
+  .dt-card-visual {
+    min-height: 200px;
+  }
+}

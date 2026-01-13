@@ -1,0 +1,97 @@
+.net-transfer-page {
+  padding-bottom: 40px;
+}
+
+.nt-header {
+  margin-bottom: 25px;
+}
+
+.nt-title {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.nt-title h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #111;
+}
+
+.nt-desc {
+  color: #333;
+  margin-bottom: 30px;
+  max-width: 1000px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.nt-desc a, .nt-note a {
+  color: #7b00ff;
+  text-decoration: none;
+}
+
+.nt-usage-box {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  /* overflow: hidden; - commented to allow box shadow if needed, but not in original design */
+}
+
+.nt-box-title {
+  padding: 20px 24px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #111;
+  border-bottom: 1px solid #e0e0e0;
+  margin: 0;
+}
+
+.nt-stats-row {
+  display: flex;
+  padding: 30px 24px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.nt-stat-left, .nt-stat-right {
+  flex: 1;
+}
+
+/* Vertical divider logic could be added or just use flex spacing */
+.nt-stat-left {
+  border-right: 1px solid #eee;
+}
+
+.nt-stat-right {
+  padding-left: 30px;
+}
+
+.stat-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #999;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  letter-spacing: 0.5px;
+}
+
+.stat-val {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #111;
+}
+
+.unit {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #777;
+  margin-left: 4px;
+  vertical-align: middle;
+}
+
+.nt-note {
+  padding: 15px 24px;
+  font-size: 0.8rem;
+  color: #777;
+  background-color: #fdfdfd;
+}

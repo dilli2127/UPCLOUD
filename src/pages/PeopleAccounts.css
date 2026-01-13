@@ -1,0 +1,180 @@
+.people-accounts-page {
+  padding-bottom: 40px;
+}
+
+.pa-header {
+  margin-bottom: 20px;
+}
+
+.pa-title {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.pa-title h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #111;
+}
+
+.icon-box-purple {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 40px;
+   height: 40px;
+   border: 1px solid #7b00ff;
+   border-radius: 4px;
+}
+
+.pa-tabs {
+  display: flex;
+  gap: 30px;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.pa-tab {
+  padding-bottom: 10px;
+  font-weight: 600;
+  color: #555;
+  cursor: pointer;
+  margin-bottom: -2px;
+}
+
+.pa-tab.active {
+  color: #7b00ff;
+  border-bottom: 2px solid #7b00ff;
+}
+
+.pa-desc {
+  color: #333;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.pa-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.search-input {
+  padding: 10px;
+  border: 1px solid transparent; /* Mimic outline only on focus or create subtle underline */
+  border-bottom: 1px solid #e0e0e0;
+  width: 300px;
+  font-size: 0.95rem;
+}
+
+.search-input:focus {
+  outline: none;
+  border-bottom-color: #7b00ff;
+}
+
+.btn-create-sub {
+  background-color: #7b00ff;
+  color: white;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-create-sub:hover {
+  background-color: #6a00dc;
+}
+
+/* List */
+.pa-list {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+}
+
+.list-header {
+  display: flex;
+  padding: 15px 24px;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #999;
+  text-transform: uppercase;
+  background-color: #fff;
+}
+
+.pa-row {
+  display: flex;
+  padding: 20px 24px;
+  border-bottom: 1px solid #e0e0e0;
+  align-items: center;
+  transition: background-color 0.2s;
+  font-size: 0.9rem;
+}
+
+.pa-row:hover {
+  background-color: #f9f9f9;
+}
+
+.pa-row:last-child {
+  border-bottom: none;
+}
+
+.col-pa-user { flex: 2.5; display: flex; align-items: center; gap: 15px; }
+.col-pa-name { flex: 2; }
+.col-pa-email { flex: 2.5; }
+.col-pa-type { flex: 1.5; }
+.col-pa-2fa { flex: 1.5; display: flex; align-items: center; gap: 8px; }
+.col-pa-feat { flex: 1.5; }
+.col-pa-action { flex: 0.5; text-align: right; }
+
+.user-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+.username-text {
+  font-weight: 500;
+  color: #111;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+.dot.red { background-color: #ff4d4f; }
+
+.feat-badge {
+  border: 1px solid #7b00ff;
+  color: #111;
+  padding: 2px 10px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.btn-edit-icon {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 6px;
+  border-radius: 4px;
+  color: #777;
+  cursor: pointer;
+}
+
+.btn-edit-icon:hover {
+  border-color: #7b00ff;
+  color: #7b00ff;
+}

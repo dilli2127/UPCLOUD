@@ -1,0 +1,9 @@
+[
+  {
+    "name": "Utility Router",
+    "desc": "Connects networks across all UpCloud's locations",
+    "networks": "Multiple",
+    "networksDesc": "Automatically assigned",
+    "type": "UTILITY"
+  }
+]

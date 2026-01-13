@@ -1,0 +1,143 @@
+.k8s-page {
+  padding: 40px;
+  background: white;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  display: flex;
+  justify-content: space-between;
+  min-height: 480px; /* Slightly taller for more text */
+  align-items: center;
+}
+
+.k8s-content-left {
+  max-width: 650px;
+}
+
+.k8s-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 24px;
+  color: #000;
+}
+
+.k8s-description {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 32px;
+}
+
+.k8s-description p {
+  margin-bottom: 20px;
+}
+
+.k8s-description a {
+  color: #7b00ff;
+  text-decoration: none;
+}
+
+.k8s-promo {
+  margin-top: 15px;
+}
+
+.purple-text {
+  color: #7b00ff;
+  font-weight: 700;
+}
+
+.k8s-actions {
+  display: flex;
+  gap: 16px;
+}
+
+.btn-create-k8s {
+  background-color: #7b00ff;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.2s;
+}
+
+.btn-create-k8s:hover {
+  background-color: #6a00dc;
+}
+
+.btn-learn-k8s {
+  background-color: transparent;
+  color: #7b00ff;
+  border: 1px solid #e0e0e0;
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.2s;
+}
+
+.btn-learn-k8s:hover {
+  border-color: #7b00ff;
+}
+
+/* Visualization - Wheel Attempt */
+.k8s-visual {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.1;
+  padding: 20px;
+}
+
+.k8s-wheel {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  animation: spin-slow 60s linear infinite;
+}
+
+.wheel-rim {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  border: 15px solid #333;
+  border-radius: 50%; /* Simplified to circle instead of heptagon for CSS ease */
+  box-sizing: border-box;
+}
+
+.wheel-center {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px; height: 50px;
+  background: #white;
+  border: 10px solid #333;
+  border-radius: 50%;
+  z-index: 5;
+}
+
+.wheel-spoke {
+  position: absolute;
+  top: 50%; left: 50%;
+  height: 10px;
+  width: 100px; /* Radius length */
+  background: #333;
+  transform-origin: 0 50%;
+  z-index: 2;
+}
+
+.s1 { transform: rotate(0deg); }
+.s2 { transform: rotate(51.4deg); }
+.s3 { transform: rotate(102.8deg); }
+.s4 { transform: rotate(154.2deg); }
+.s5 { transform: rotate(205.6deg); }
+.s6 { transform: rotate(257deg); }
+.s7 { transform: rotate(308.4deg); }
+
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

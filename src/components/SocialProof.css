@@ -1,0 +1,39 @@
+.social-proof {
+  padding: 60px 0;
+  border-bottom: 1px solid var(--border-color);
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.social-proof-title {
+  text-align: center;
+  margin-bottom: 40px;
+  color: var(--text-gray);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+}
+
+.logos-grid {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  opacity: 0.7;
+}
+
+.logo-item {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-gray);
+  filter: grayscale(100%);
+  transition: all 0.3s;
+  cursor: default;
+}
+
+.logo-item:hover {
+  filter: grayscale(0%);
+  color: #fff;
+  transform: scale(1.05);
+}

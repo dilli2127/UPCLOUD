@@ -1,0 +1,157 @@
+.storage-page {
+  padding-bottom: 40px;
+}
+
+.storage-header {
+  margin-bottom: 30px;
+}
+
+.storage-title {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  background: #f7f0ff;
+  border-radius: 8px;
+}
+
+.storage-title h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #111;
+}
+
+.storage-description {
+  color: #333;
+  margin-bottom: 24px;
+  max-width: 800px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.storage-description a {
+  color: #7b00ff;
+  text-decoration: none;
+}
+
+.btn-add-storage {
+  background-color: #7b00ff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-add-storage:hover {
+  background-color: #6a00dc;
+}
+
+/* List / Table Styling */
+.storage-list {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+}
+
+.list-header {
+  display: flex;
+  padding: 15px 24px;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #999;
+  text-transform: uppercase;
+  background-color: #fff;
+}
+
+.storage-row {
+  display: flex;
+  padding: 20px 24px;
+  border-bottom: 1px solid #e0e0e0;
+  align-items: center;
+  transition: background-color 0.2s;
+}
+
+.storage-row:hover {
+  background-color: #f9f9f9;
+}
+
+.storage-row:last-child {
+  border-bottom: none;
+}
+
+/* Column Widths */
+.col-name { flex: 2.5; display: flex; flex-direction: column; justify-content: center; }
+.col-tier { flex: 1; color: #111; font-weight: 500;}
+.col-size { flex: 1; color: #111;}
+.col-attached { flex: 1.5; }
+.col-location { flex: 1; color: #111;}
+.col-actions { flex: 0.5; display: flex; justify-content: flex-end; gap: 10px; }
+
+/* Cell Content */
+.device-name {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: #111;
+  margin-bottom: 4px;
+}
+
+.device-uuid {
+  font-size: 0.75rem;
+  color: #999;
+  font-family: monospace;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.copy-icon {
+  color: #7b00ff;
+  cursor: pointer;
+}
+
+.link-text {
+  color: #7b00ff;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.sort-arrow {
+  color: #ccc;
+  font-size: 0.6rem;
+  margin-left: 4px;
+  cursor: pointer;
+}
+
+.icon-btn {
+  background: white;
+  border: 1px solid #e0e0e0;
+  color: #ccc;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.icon-btn:hover {
+  border-color: #7b00ff;
+  color: #7b00ff;
+}

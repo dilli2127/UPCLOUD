@@ -1,0 +1,111 @@
+.migrate-page {
+  padding: 40px;
+  background: white;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  display: flex;
+  justify-content: space-between;
+  min-height: 400px;
+  align-items: center;
+}
+
+.migrate-content-left {
+  max-width: 600px;
+}
+
+.migrate-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 24px;
+  color: #000;
+}
+
+.migrate-description {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 32px;
+}
+
+.migrate-actions {
+  display: flex;
+  gap: 16px;
+}
+
+.btn-create-mig {
+  background-color: #7b00ff;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.2s;
+}
+
+.btn-create-mig:hover {
+  background-color: #6a00dc;
+}
+
+.btn-doc-mig {
+  background-color: transparent;
+  color: #7b00ff;
+  border: 1px solid #e0e0e0;
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.2s;
+}
+
+.btn-doc-mig:hover {
+  border-color: #7b00ff;
+}
+
+/* Visualization */
+.migrate-visual {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.1;
+}
+
+.link-icon-large {
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+
+.link-square {
+  width: 60px;
+  height: 60px;
+  border: 10px solid #333;
+  position: absolute;
+}
+
+.sq1 {
+  top: 50px;
+  left: 30px;
+  border-right: none;
+}
+
+.sq2 {
+  top: 90px;
+  left: 110px;
+  border-left: none;
+}
+
+.link-connection { /* Connecting visual not perfectly accurate but evokes the concept */
+    width: 60px;
+    height: 60px;
+    border: 10px solid #333;
+    position: absolute;
+    top: 70px;
+    left: 70px;
+    border-top: none; 
+    border-bottom: none;
+    transform: rotate(45deg);
+}

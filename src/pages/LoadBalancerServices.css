@@ -1,0 +1,136 @@
+.lb-page {
+  padding: 40px;
+  background: white;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  display: flex;
+  justify-content: space-between;
+  min-height: 400px;
+  align-items: center;
+}
+
+.lb-content-left {
+  max-width: 600px;
+}
+
+.lb-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 24px;
+  color: #000;
+}
+
+.lb-description {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 32px;
+}
+
+.lb-promo {
+  margin-top: 15px;
+}
+
+.purple-text {
+  color: #7b00ff;
+  font-weight: 700;
+}
+
+.lb-actions {
+  display: flex;
+  gap: 16px;
+}
+
+.btn-create-lb {
+  background-color: #7b00ff;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.2s;
+}
+
+.btn-create-lb:hover {
+  background-color: #6a00dc;
+}
+
+.btn-learn-lb {
+  background-color: transparent;
+  color: #7b00ff;
+  border: 1px solid #e0e0e0;
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.2s;
+}
+
+.btn-learn-lb:hover {
+  border-color: #7b00ff;
+}
+
+/* Visualization */
+.lb-visual {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.1; /* Faded effect */
+}
+
+.lb-diagram {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lb-node-top {
+  width: 60px;
+  height: 60px;
+  border: 10px solid #333;
+  border-radius: 50%;
+  margin-bottom: 0;
+  background: white;
+  z-index: 2;
+}
+
+.lb-lines-vertical {
+  width: 10px;
+  height: 40px;
+  background: #333;
+}
+
+.lb-lines-horizontal {
+  width: 140px; 
+  height: 10px;
+  background: #333;
+}
+
+.lb-nodes-bottom {
+  display: flex;
+  gap: 30px;
+  margin-top: -5px; /* Pull up to connect with horizontal line */
+}
+
+.lb-node {
+  width: 50px;
+  height: 50px;
+  border: 10px solid #333;
+  border-radius: 50%;
+  background: white;
+  position: relative;
+}
+
+.lb-node::before {
+   content: '';
+   position: absolute;
+   top: -20px;
+   left: 15px;
+   width: 10px;
+   height: 20px;
+   background: #333;
+}

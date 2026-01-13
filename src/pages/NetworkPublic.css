@@ -1,0 +1,91 @@
+.network-public-page {
+  padding-bottom: 40px;
+}
+
+.np-header {
+  margin-bottom: 30px;
+}
+
+.np-title {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.np-title h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #111;
+}
+
+.np-description {
+  color: #333;
+  margin-bottom: 30px;
+  max-width: 900px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* List / Table */
+.np-list {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+}
+
+.list-header {
+  display: flex;
+  padding: 15px 24px;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #999;
+  text-transform: uppercase;
+  background-color: #fff;
+}
+
+.np-row {
+  display: flex;
+  padding: 20px 24px;
+  border-bottom: 1px solid #e0e0e0;
+  align-items: center;
+  transition: background-color 0.2s;
+  font-size: 0.92rem;
+}
+
+.np-row:hover {
+  background-color: #f9f9f9;
+}
+
+.np-row:last-child {
+  border-bottom: none;
+}
+
+.col-np-ip { flex: 1.5; color: #111; font-weight: 500; }
+.col-np-dns { flex: 2; display: flex; align-items: center; justify-content: space-between; padding-right: 20px; color: #333; }
+.col-np-attached { flex: 1.5; }
+.col-np-loc { flex: 0.5; color: #333; }
+
+.link-purple {
+  color: #7b00ff;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.edit-btn {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 4px;
+  border-radius: 4px;
+  color: #777;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.edit-btn:hover {
+  border-color: #7b00ff;
+  color: #7b00ff;
+}

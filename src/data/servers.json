@@ -1,0 +1,35 @@
+[
+  {
+    "id": "uuid-1",
+    "status": "running",
+    "name": "Prod 1",
+    "os": "Ubuntu Server 22.04 LTS (Jammy Jellyfish)",
+    "ip": "95.111.200.234",
+    "cpu": "4 cores",
+    "storage": "160 GB",
+    "memory": "8 GB",
+    "location": "SG-SIN1"
+  },
+  {
+    "id": "uuid-2",
+    "status": "running",
+    "name": "ubuntu-1cpu-1gb-uk-lon1",
+    "os": "Ubuntu Server 24.04 LTS (Noble Numbat)",
+    "ip": "94.237.123.245",
+    "cpu": "1 core",
+    "storage": "10 GB",
+    "memory": "1 GB",
+    "location": "UK-LON1"
+  },
+  {
+    "id": "uuid-3",
+    "status": "running",
+    "name": "VPN",
+    "os": "Custom image",
+    "ip": "95.111.197.33",
+    "cpu": "1 core",
+    "storage": "25 GB",
+    "memory": "1 GB",
+    "location": "SG-SIN1"
+  }
+]

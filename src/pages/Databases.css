@@ -1,0 +1,141 @@
+.db-page {
+  padding: 40px;
+  background: white;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  display: flex;
+  justify-content: space-between;
+  min-height: 400px;
+  align-items: flex-start; /* Align top for long list */
+}
+
+.db-content-left {
+  max-width: 600px;
+}
+
+.db-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 24px;
+  color: #000;
+}
+
+.db-description {
+  font-size: 0.95rem;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.db-list {
+  margin-bottom: 30px;
+}
+
+.db-item {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.db-icon {
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  padding-top: 5px;
+  color: #333;
+}
+
+.db-info h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 4px;
+}
+
+.db-info p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.db-info a {
+  color: #7b00ff;
+  text-decoration: none;
+}
+
+.db-actions {
+  display: flex;
+  gap: 16px;
+  margin-top: 40px;
+}
+
+.btn-create-db {
+  background-color: #7b00ff;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.2s;
+}
+
+.btn-create-db:hover {
+  background-color: #6a00dc;
+}
+
+.btn-learn-db {
+  background-color: transparent;
+  color: #7b00ff;
+  border: 1px solid #e0e0e0;
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.2s;
+}
+
+.btn-learn-db:hover {
+  border-color: #7b00ff;
+}
+
+/* Visualization */
+.db-visual {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.1;
+  padding-top: 50px;
+}
+
+.rack-icon {
+  width: 180px;
+  height: 220px;
+  border: 10px solid #333;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 10px;
+}
+
+.rack-slot {
+  height: 50px;
+  background: #333;
+  width: 100%;
+  border-radius: 2px;
+  position: relative;
+}
+
+.rack-slot::before {
+    content: '';
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    width: 20px;
+    height: 20px;
+    background: white;
+    opacity: 0.5;
+}

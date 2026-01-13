@@ -1,0 +1,101 @@
+.custom-images-page {
+  padding-bottom: 40px;
+}
+
+.ci-header {
+  margin-bottom: 30px;
+}
+
+.ci-title {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.ci-title h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #111;
+}
+
+.ci-description {
+  color: #333;
+  margin-bottom: 15px;
+  max-width: 900px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.ci-instruction {
+  color: #333;
+  margin-bottom: 30px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.ci-instruction a {
+  color: #7b00ff;
+  text-decoration: none;
+}
+
+.ci-pricing {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price-rate {
+  font-weight: 700;
+  color: #7b00ff;
+  font-size: 0.9rem;
+}
+
+.total-monthly {
+  font-size: 1rem;
+  color: #333;
+}
+
+.purple-val {
+  color: #7b00ff;
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-left: 5px;
+}
+
+/* List / Table Styling */
+.ci-list {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.list-header {
+  display: flex;
+  padding: 15px 24px;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #999;
+  text-transform: uppercase;
+  background-color: #fff;
+}
+
+.col-ci-name { flex: 2; }
+.col-ci-size { flex: 1; }
+.col-ci-price { flex: 1; }
+.col-ci-fees { flex: 1; }
+.col-ci-loc { flex: 1; }
+
+.empty-state {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+  font-size: 1rem;
+  font-weight: 500;
+}

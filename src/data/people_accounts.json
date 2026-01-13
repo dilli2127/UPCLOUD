@@ -1,0 +1,22 @@
+[
+  {
+    "username": "naduvan_accounts",
+    "name": "Naduvan Tech Accounts",
+    "email": "accounts@vertace.com",
+    "type": "Subaccount",
+    "2fa": "Disabled",
+    "features": [
+      { "label": "Billing", "type": "billing" }
+    ]
+  },
+  {
+    "username": "naduvantech",
+    "name": "Vivek Gandhi",
+    "email": "vivek@naduvantech.com",
+    "type": "Main account",
+    "2fa": "Disabled",
+    "features": [
+      { "label": "Technical", "type": "technical" }
+    ]
+  }
+]

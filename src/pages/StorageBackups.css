@@ -1,0 +1,136 @@
+.backups-page {
+  padding-bottom: 40px;
+}
+
+.backups-header {
+  margin-bottom: 30px;
+}
+
+.backups-title {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.backups-title h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #111;
+}
+
+.backups-description {
+  color: #333;
+  margin-bottom: 24px;
+  max-width: 900px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.backups-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.btn-choose-schedule {
+  background-color: #7b00ff;
+  color: white;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-choose-schedule:hover {
+  background-color: #6a00dc;
+}
+
+.total-price {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.price-val {
+  color: #7b00ff;
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-left: 5px;
+}
+
+/* List / Table Styling */
+.backups-list {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+}
+
+.list-header {
+  display: flex;
+  padding: 15px 24px;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #999;
+  text-transform: uppercase;
+  background-color: #fff;
+}
+
+.backup-row {
+  display: flex;
+  padding: 20px 24px;
+  border-bottom: 1px solid #e0e0e0;
+  align-items: center;
+  transition: background-color 0.2s;
+}
+
+.backup-row:hover {
+  background-color: #f9f9f9;
+}
+
+.col-server { flex: 1.5; display: flex; align-items: center; gap: 10px; }
+.col-count { flex: 1; color: #555; font-size: 0.9rem; }
+.col-schedule { flex: 2; }
+.col-price { flex: 1; color: #555; font-size: 0.9rem; text-align: right; }
+
+.expand-icon {
+  color: #333;
+  cursor: pointer;
+}
+
+.server-name {
+  color: #7b00ff;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.schedule-box {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.edit-icon {
+  border: 1px solid #ccc;
+  padding: 2px;
+  width: 20px;
+  height: 20px;
+  color: #666;
+  border-radius: 2px;
+}
+
+.list-footer {
+  padding: 20px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #333;
+  border-top: 1px solid #e0e0e0;
+}

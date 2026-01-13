@@ -1,0 +1,71 @@
+.vpn-page {
+  padding-bottom: 40px;
+}
+
+.vpn-header {
+  margin-bottom: 40px;
+}
+
+.vpn-title {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.vpn-title h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #111;
+}
+
+.vpn-description {
+  color: #333;
+  margin-bottom: 30px;
+  max-width: 900px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.vpn-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.btn-create-vpn {
+  background-color: #7b00ff;
+  color: white;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-create-vpn:hover {
+  background-color: #6a00dc;
+}
+
+.vpn-empty-state {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+  text-align: center;
+}
+
+.vpn-empty-state h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #111;
+  margin-bottom: 8px;
+}
+
+.vpn-empty-state p {
+  color: #666;
+  font-size: 0.95rem;
+}

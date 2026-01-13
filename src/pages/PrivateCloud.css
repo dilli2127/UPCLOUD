@@ -1,0 +1,123 @@
+.pc-page {
+  padding: 40px;
+  background: white;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  display: flex;
+  justify-content: space-between;
+  min-height: 400px;
+  align-items: center;
+}
+
+.pc-content-left {
+  max-width: 600px;
+}
+
+.pc-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 24px;
+  color: #000;
+}
+
+.pc-description {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 32px;
+}
+
+.pc-actions {
+  display: flex;
+  gap: 16px;
+}
+
+.btn-touch-pc {
+  background-color: #7b00ff;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.2s;
+}
+
+.btn-touch-pc:hover {
+  background-color: #6a00dc;
+}
+
+.btn-learn-pc {
+  background-color: transparent;
+  color: #7b00ff;
+  border: 1px solid #e0e0e0;
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.2s;
+}
+
+.btn-learn-pc:hover {
+  border-color: #7b00ff;
+}
+
+/* Visualization */
+.pc-visual {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.1;
+}
+
+.lock-icon {
+  width: 200px;
+  height: 240px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lock-shackle {
+  width: 120px;
+  height: 100px;
+  border: 25px solid #333;
+  border-bottom: none;
+  border-radius: 60px 60px 0 0;
+  margin-bottom: -15px; /* Overlap slightly */
+}
+
+.lock-body {
+  width: 200px;
+  height: 140px;
+  background: white; /* Fill to cover bottom parts of shackle if needed */
+  border: 25px solid #333;
+  border-radius: 10px;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lock-keyhole {
+  width: 30px;
+  height: 30px;
+  background: #333;
+  border-radius: 50%;
+  position: relative;
+}
+
+.lock-keyhole::after {
+  content: '';
+  position: absolute;
+  top: 20px;
+  left: 5px;
+  width: 20px;
+  height: 30px;
+  background: #333;
+}

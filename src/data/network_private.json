@@ -1,0 +1,19 @@
+[
+  {
+    "name": "My Private Network",
+    "uuid": "036f54cb-5b7f-4c45-a9ca-b178569672e2",
+    "ip": "10.0.0.0/24",
+    "features": "DHCP",
+    "resources": "2 resources",
+    "location": "SG-SIN1"
+  },
+  {
+    "name": "Utility Network",
+    "uuid": "",
+    "ip": "Multiple",
+    "desc": "Automatically assigned",
+    "features": "DHCP",
+    "resources": "",
+    "location": "GLOBAL"
+  }
+]

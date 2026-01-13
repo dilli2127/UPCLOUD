@@ -1,0 +1,82 @@
+.network-peering-page {
+  padding-bottom: 40px;
+}
+
+.peers-header {
+  margin-bottom: 40px;
+}
+
+.peers-title {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.peers-title h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #111;
+}
+
+.peers-description {
+  color: #333;
+  margin-bottom: 30px;
+  max-width: 900px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.peers-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.btn-create-peering {
+  background-color: #7b00ff;
+  color: white;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-create-peering:hover {
+  background-color: #6a00dc;
+}
+
+.price-info {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.price-val {
+  color: #7b00ff;
+  font-weight: 700;
+  margin-right: 4px;
+}
+
+.peers-empty-state {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+  text-align: center;
+}
+
+.peers-empty-state h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #111;
+  margin-bottom: 8px;
+}
+
+.peers-empty-state p {
+  color: #666;
+  font-size: 0.95rem;
+}

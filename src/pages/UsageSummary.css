@@ -1,0 +1,104 @@
+.usage-summary-page {
+  padding-bottom: 40px;
+}
+
+.us-header {
+  margin-bottom: 30px;
+}
+
+.us-title {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.us-title h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #111;
+}
+
+.us-year-block {
+  background: white;
+  border: 1px solid #e0e0e0; /* Or just border-bottom/top */
+  margin-bottom: 20px;
+  border-radius: 4px;
+}
+
+.us-year-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 24px;
+  cursor: pointer;
+  background: white;
+  border-radius: 4px;
+}
+
+.us-year-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.year-text {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #111;
+}
+
+.us-year-chevron {
+  color: #7b00ff;
+}
+
+.icon-box-purple.small {
+  width: 32px;
+  height: 32px;
+}
+
+/* Month List */
+.us-month-list {
+  border-top: 1px solid #e0e0e0;
+  background-color: #fcfcfc;
+}
+
+.month-list-header {
+   display: flex;
+   padding: 12px 24px;
+   font-size: 0.75rem;
+   font-weight: 700;
+   color: #999;
+   text-transform: uppercase;
+   border-bottom: 1px solid #eee;
+}
+
+.us-month-row {
+  display: flex;
+  padding: 16px 24px;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+}
+
+.us-month-row:last-child {
+  border-bottom: none;
+}
+
+.col-month { flex: 1; display: flex; align-items: center; gap: 10px; }
+.col-cost { flex: 0.2; text-align: right; }
+
+.ongoing-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 2px 10px;
+  font-size: 0.75rem;
+  color: #555;
+}
+
+.cost-val {
+  font-weight: 600;
+  color: #111;
+}

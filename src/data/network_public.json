@@ -1,0 +1,38 @@
+[
+  {
+    "ip": "2a04:3541:1000:500:7cab:13ff:fec5:1d52",
+    "dns": "7cab-13ff-fec5-1d52.v6.uk-lon1.upcloud.host",
+    "attached": "ubuntu-1cpu-1gb-uk-lon1",
+    "location": "UK-LON1"
+  },
+  {
+    "ip": "2a04:3543:1000:2310:7cab:13ff:fec5:23a6",
+    "dns": "7cab-13ff-fec5-23a6.v6.sg-sin1.upcloud.host",
+    "attached": "prod-1",
+    "location": "SG-SIN1"
+  },
+  {
+    "ip": "2a04:3543:1000:2310:7cab:13ff:fec5:45aa",
+    "dns": "7cab-13ff-fec5-45aa.v6.sg-sin1.upcloud.host",
+    "attached": "vpn",
+    "location": "SG-SIN1"
+  },
+  {
+    "ip": "94.237.123.245",
+    "dns": "94-237-123-245.uk-lon1.upcloud.host",
+    "attached": "ubuntu-1cpu-1gb-uk-lon1",
+    "location": "UK-LON1"
+  },
+  {
+    "ip": "95.111.197.33",
+    "dns": "95-111-197-33.sg-sin1.upcloud.host",
+    "attached": "vpn",
+    "location": "SG-SIN1"
+  },
+  {
+    "ip": "95.111.200.234",
+    "dns": "95-111-200-234.sg-sin1.upcloud.host",
+    "attached": "prod-1",
+    "location": "SG-SIN1"
+  }
+]

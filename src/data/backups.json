@@ -1,0 +1,20 @@
+[
+  {
+    "server": "Prod 1",
+    "count": 1,
+    "schedule": "1 daily backup (at 00:00 UTC time)",
+    "price": "€0.00 per month"
+  },
+  {
+    "server": "ubuntu-1cpu-1gb-uk-lon1",
+    "count": 0,
+    "schedule": "(no backup schedule set)",
+    "price": "€0.00 per month"
+  },
+  {
+    "server": "VPN",
+    "count": 1,
+    "schedule": "1 daily backup (at 21:00 UTC time)",
+    "price": "€0.00 per month"
+  }
+]

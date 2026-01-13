@@ -1,0 +1,32 @@
+[
+  {
+    "date": "2026-01-12",
+    "resource": "All resources",
+    "charge": "€1.55800",
+    "description": "Total resources"
+  },
+  {
+    "date": "2026-01-11",
+    "resource": "All resources",
+    "charge": "€2.21424",
+    "description": "Total resources"
+  },
+  {
+    "date": "2026-01-10",
+    "resource": "All resources",
+    "charge": "€2.21424",
+    "description": "Total resources"
+  },
+  {
+    "date": "2026-01-09",
+    "resource": "All resources",
+    "charge": "€2.21424",
+    "description": "Total resources"
+  },
+  {
+    "date": "2026-01-08",
+    "resource": "All resources",
+    "charge": "€2.21424",
+    "description": "Total resources"
+  }
+]

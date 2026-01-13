@@ -1,0 +1,75 @@
+.nat-page {
+  padding-bottom: 40px;
+}
+
+.nat-header {
+  margin-bottom: 40px;
+}
+
+.nat-title {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.nat-title h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #111;
+}
+
+.nat-description {
+  color: #333;
+  margin-bottom: 30px;
+  max-width: 900px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.nat-description p {
+  margin-bottom: 10px;
+}
+
+.nat-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.btn-create-nat {
+  background-color: #7b00ff;
+  color: white;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-create-nat:hover {
+  background-color: #6a00dc;
+}
+
+.nat-empty-state {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+  text-align: center;
+}
+
+.nat-empty-state h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #111;
+  margin-bottom: 8px;
+}
+
+.nat-empty-state p {
+  color: #666;
+  font-size: 0.95rem;
+}
