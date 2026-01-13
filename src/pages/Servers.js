@@ -5,8 +5,11 @@ import {
 import serverData from '../data/servers.json';
 import './Servers.css';
 
+import { useNavigate } from 'react-router-dom';
+
 const Servers = () => {
   const [searchTerm, setSearchTerm] = useState('');
+  const navigate = useNavigate();
   
   const filteredServers = serverData.filter(server => 
     server.name.toLowerCase().includes(searchTerm.toLowerCase()) || 
@@ -62,8 +65,12 @@ const Servers = () => {
         </div>
 
         {filteredServers.map((server) => (
-          <div className="server-row" key={server.id}>
-             <div className="col-checkbox"><input type="checkbox" /></div>
+          <div 
+            className="server-row clickable" 
+            key={server.id}
+            onClick={() => navigate(`/dashboard/servers/cloud/${server.id}`)}
+          >
+             <div className="col-checkbox" onClick={(e) => e.stopPropagation()}><input type="checkbox" /></div>
              
              <div className="col-name">
                 <div className="server-status">

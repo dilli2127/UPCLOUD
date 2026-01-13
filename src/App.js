@@ -32,6 +32,8 @@ import UsageBillingLog from './pages/UsageBillingLog';
 import UsageSummary from './pages/UsageSummary';
 import UsageNetworkTransfer from './pages/UsageNetworkTransfer';
 import UpCloudEssentials from './pages/UpCloudEssentials';
+import Account from './pages/Account';
+import ServerDetail from './pages/ServerDetail';
 
 function App() {
   return (
@@ -46,10 +48,12 @@ function App() {
         {/* Dashboard Routes */}
         <Route path="/dashboard" element={<DashboardLayout />}>
           <Route index element={<Dashboard />} />
+          <Route path="account" element={<Account />} />
           
           {/* Server Sub-routes */}
           <Route path="servers" element={<Navigate to="cloud" replace />} />
           <Route path="servers/cloud" element={<Servers />} />
+          <Route path="servers/cloud/:id" element={<ServerDetail />} />
           <Route path="servers/gpu" element={<GpuServers />} />
           <Route path="servers/anti-affinity" element={<AntiAffinityGroups />} />
           

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, ChevronDown } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -18,7 +19,7 @@ const Navbar = () => {
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="container nav-container">
         <div className="logo">
-          <a href="/">UpCloud</a>
+          <Link to="/">UpCloud</Link>
         </div>
 
         <div className="mobile-toggle" onClick={() => setIsOpen(!isOpen)}>
@@ -43,7 +44,7 @@ const Navbar = () => {
           </div>
           
           <div className="nav-buttons">
-            <a href="#login" className="login-link">Log in</a>
+            <Link to="/login" className="login-link">Log in</Link>
             <button className="btn btn-primary btn-sm">Sign up</button>
           </div>
         </div>

@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { 
   LayoutDashboard, Server, Database, Box, Plus, 
   ArrowRight, HardDrive, CreditCard, HelpCircle
 } from 'lucide-react';
+import { billingService } from '../services/billingService';
 import './Dashboard.css';
 
 const WidgetCard = ({ title, icon, children, badge, className = '' }) => (
@@ -39,6 +41,25 @@ const StatusBar = ({ count, label, color = "#00b84f" }) => (
 );
 
 const Dashboard = () => {
+    const navigate = useNavigate();
+    const [billingSummary, setBillingSummary] = useState({
+        dailyUse: 'Loading...',
+        balance: '...',
+        exhaustionDate: '...'
+    });
+
+    useEffect(() => {
+        const fetchSummary = async () => {
+            try {
+                const data = await billingService.getDashboardSummary();
+                setBillingSummary(data);
+            } catch (error) {
+                console.error("Failed to load dashboard billing info", error);
+            }
+        };
+        fetchSummary();
+    }, []);
+
   return (
     <div className="dashboard-container">
       <div className="dashboard-header">
@@ -90,16 +111,18 @@ const Dashboard = () => {
         <div className="dashboard-col">
           <WidgetCard title="Billing">
             <div className="billing-content">
-              <h2 className="billing-amount">€2.21</h2>
-              <p className="billing-label">Daily use</p>
-              <div className="billing-details-link">See details</div>
+              <h2 className="billing-amount">{billingSummary.dailyUse}</h2>
+              <p className="billing-label">Current usage</p>
+              <div className="billing-details-link" onClick={() => navigate('/dashboard/usage/billing-log')}>
+                  See details
+              </div>
               <div className="billing-row">
                 <span>Current balance</span>
-                <span>€17.72</span>
+                <span>{billingSummary.balance}</span>
               </div>
               <div className="billing-row">
                 <span>Balance exhaustion date</span>
-                <span>20 Jan 2026</span>
+                <span>{billingSummary.exhaustionDate}</span>
               </div>
             </div>
           </WidgetCard>
