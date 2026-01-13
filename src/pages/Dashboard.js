@@ -22,8 +22,8 @@ const WidgetCard = ({ title, icon, children, badge, className = '' }) => (
   </div>
 );
 
-const NoResources = () => (
-  <div className="no-resources">
+const NoResources = ({ onClick }) => (
+  <div className="no-resources" onClick={onClick} style={{ cursor: onClick ? 'pointer' : 'default' }}>
     No resources. Click to create.
   </div>
 );
@@ -84,26 +84,26 @@ const Dashboard = () => {
           </WidgetCard>
           
           <WidgetCard title="Databases" icon={<Database size={18} />}>
-            <NoResources />
+            <NoResources onClick={() => navigate('/dashboard/databases/deploy')} />
           </WidgetCard>
           
           <WidgetCard title="Kubernetes" icon={<Box size={18} />}>
-            <NoResources />
+            <NoResources onClick={() => navigate('/dashboard/kubernetes/deploy')} />
           </WidgetCard>
         </div>
 
         {/* Column 2 */}
         <div className="dashboard-col">
           <WidgetCard title="GPU Servers" icon={<Server size={18} />} badge="NEW!">
-            <NoResources />
+            <NoResources onClick={() => navigate('/dashboard/servers/gpu')} />
           </WidgetCard>
           
           <WidgetCard title="Object Storages" icon={<Database size={18} />}>
-            <NoResources />
+            <NoResources onClick={() => navigate('/dashboard/object-storage/deploy')} />
           </WidgetCard>
           
           <WidgetCard title="Load Balancer" icon={<Box size={18} />}>
-            <NoResources />
+            <NoResources onClick={() => navigate('/dashboard/load-balancer/deploy')} />
           </WidgetCard>
         </div>
 

@@ -35,6 +35,8 @@ import UpCloudEssentials from './pages/UpCloudEssentials';
 import Account from './pages/Account';
 import ServerDetail from './pages/ServerDetail';
 import DeployServer from './pages/DeployServer';
+import DeployDatabase from './pages/DeployDatabase';
+import DeployObjectStorage from './pages/DeployObjectStorage';
 
 function App() {
   return (
@@ -79,10 +81,12 @@ function App() {
           {/* Object Storage Sub-routes */}
           <Route path="object-storage" element={<Navigate to="list" replace />} />
           <Route path="object-storage/list" element={<ObjectStorage />} />
+          <Route path="object-storage/deploy" element={<DeployObjectStorage />} />
           <Route path="object-storage/migrate" element={<ObjectStorageMigrate />} />
           
           {/* Database Route */}
           <Route path="databases" element={<Databases />} />
+          <Route path="databases/deploy" element={<DeployDatabase />} />
 
           {/* Load Balancer Routes */}
           <Route path="load-balancer" element={<Navigate to="services" replace />} />

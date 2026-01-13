@@ -1,20 +1,30 @@
 .hero {
-  padding: 160px 0 100px;
+  padding: 160px 0 120px;
   position: relative;
   overflow: hidden;
+  background-size: cover;
+  background-position: center top; /* Focus on top to keep head */
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+@media (min-width: 1200px) {
+  .hero {
+      background-position: right top; /* Center right, but top aligned */
+      min-height: 80vh; 
+      display: flex;
+      align-items: center;
+  }
 }
 
 .hero-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 50px;
+  width: 100%;
 }
 
 .hero-content {
-  flex: 1;
   max-width: 600px;
   z-index: 2;
+  position: relative;
 }
 
 .hero-title {
@@ -23,13 +33,23 @@
   line-height: 1.1;
   margin-bottom: 24px;
   letter-spacing: -2px;
+  color: #fff;
 }
 
 .hero-subtitle {
   font-size: 1.25rem;
-  color: var(--text-gray);
+  color: #eee;
+  margin-bottom: 20px;
+  line-height: 1.6;
+  max-width: 540px;
+}
+
+.hero-subtitle-2 {
+  font-size: 1.25rem;
+  color: #fff;
   margin-bottom: 40px;
   line-height: 1.6;
+  font-weight: 600;
   max-width: 500px;
 }
 
@@ -41,71 +61,26 @@
 
 .hero-buttons .btn {
   padding: 16px 32px;
-  font-size: 1.1rem;
-}
-
-.hero-note {
   font-size: 0.9rem;
-  color: var(--text-gray);
-  opacity: 0.8;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  border-radius: 50px; /* Match pill shape from screenshot */
 }
 
-.hero-visual {
-  flex: 1;
-  position: relative;
-  height: 500px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/* Hero Image */
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px; /* Optional rounded corners */
+  mask-image: radial-gradient(circle, black 60%, transparent 100%); /* Soft fade edges */
+  -webkit-mask-image: radial-gradient(circle, black 60%, transparent 100%);
+  animation: pulse-glow 3s infinite alternate;
 }
 
-/* Abstract Cloud Animation */
-.cloud-graphic {
-  position: relative;
-  width: 400px;
-  height: 400px;
-}
-
-.circle {
-  border-radius: 50%;
-  position: absolute;
-  filter: blur(60px);
-  opacity: 0.6;
-  animation: float 10s infinite ease-in-out;
-}
-
-.c1 {
-  width: 300px;
-  height: 300px;
-  background: var(--primary-purple);
-  top: 0;
-  left: 0;
-  animation-delay: 0s;
-}
-
-.c2 {
-  width: 250px;
-  height: 250px;
-  background: #00d2ff;
-  bottom: 0;
-  right: 0;
-  animation-delay: -3s;
-}
-
-.c3 {
-  width: 200px;
-  height: 200px;
-  background: #ff00ab;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  animation-delay: -6s;
-}
-
-@keyframes float {
-  0%, 100% { transform: translate(0, 0) scale(1); }
-  33% { transform: translate(30px, -50px) scale(1.1); }
-  66% { transform: translate(-20px, 20px) scale(0.9); }
+@keyframes pulse-glow {
+  0% { filter: brightness(1); transform: scale(1); }
+  100% { filter: brightness(1.1); transform: scale(1.02); }
 }
 
 @media (max-width: 900px) {
