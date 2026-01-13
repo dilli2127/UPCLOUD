@@ -158,6 +158,10 @@ const Sidebar = () => {
           );
         })}
       </div>
+      
+      <div className="sidebar-footer">
+        Powered by <span className="aws-brand">AWS</span>
+      </div>
     </div>
   );
 };
