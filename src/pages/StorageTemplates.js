@@ -14,7 +14,7 @@ const StorageTemplates = () => {
            <h1>Templates</h1>
         </div>
         <p className="tpl-description">
-          These templates are created and maintained by UpCloud. If you'd like, you can create your own custom image based on these so you can quickly deploy a production-ready server in just a few seconds.
+          These templates are created and maintained by AWS Private Cloud. If you'd like, you can create your own custom image based on these so you can quickly deploy a production-ready server in just a few seconds.
         </p>
       </div>
 

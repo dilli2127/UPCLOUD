@@ -27,7 +27,7 @@ const PeoplePermissions = () => {
 
       <div className="pp-content">
          <p className="pp-desc">
-            The main account holder can grant granual access to their UpCloud services by editing the permissions of each subaccount.
+            The main account holder can grant granual access to their AWS Private Cloud services by editing the permissions of each subaccount.
          </p>
 
          <div className="pp-actions">

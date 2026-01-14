@@ -1,8 +1,10 @@
 
+
 .sidebar {
   width: 260px;
   background-color: #ffffff;
-  border-right: 1px solid #e0e0e0;
+  border-right: 1px solid #eee;
+  box-shadow: 2px 0 10px rgba(0,0,0,0.03); /* Subtle shadow */
   height: 100vh;
   position: fixed;
   left: 0;
@@ -12,9 +14,27 @@
   z-index: 100;
 }
 
+/* Custom Scrollbar for Sidebar Menu */
+.sidebar-menu::-webkit-scrollbar {
+  width: 5px;
+}
+
+.sidebar-menu::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.sidebar-menu::-webkit-scrollbar-thumb {
+  background: #e0e0e0;
+  border-radius: 4px;
+}
+
+.sidebar-menu::-webkit-scrollbar-thumb:hover {
+  background: #ccc;
+}
+
 .sidebar-logo {
-  padding: 24px;
-  font-size: 1.5rem;
+  padding: 20px;
+  font-size: 1.15rem;
   font-weight: 700;
   color: #000;
   border-bottom: 1px solid transparent;
@@ -23,13 +43,14 @@
 .sidebar-logo a {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
   text-decoration: none;
   color: inherit;
+  white-space: nowrap; /* Force single line */
 }
 
 .logo-icon {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
 }
 
 .sidebar-menu {
@@ -46,24 +67,26 @@
 .menu-item {
   display: flex;
   align-items: center;
-  padding: 12px 24px;
+  padding: 10px 16px;
+  margin: 2px 12px; /* Add margin for floating look */
+  border-radius: 8px; /* Rounded corners */
   cursor: pointer;
-  color: #555;
-  transition: all 0.2s;
+  color: #666;
+  transition: all 0.2s ease;
   font-weight: 500;
-  font-size: 0.95rem;
-  border-left: 4px solid transparent;
+  font-size: 0.9rem;
+  border-left: none; /* Removed the line */
 }
 
 .menu-item:hover {
-  background-color: #f9f9f9;
-  color: #000;
+  background-color: #f5f5f7;
+  color: #111;
 }
 
 .menu-item.active {
-  background-color: #f7f0ff;
+  background-color: #f4ecff; /* Lighter purple tint */
   color: #7b00ff;
-  border-left-color: #7b00ff;
+  font-weight: 600;
 }
 
 .menu-icon {
@@ -84,33 +107,38 @@
 
 /* Submenu Styling */
 .submenu {
-  background-color: #fcfcfc;
-  padding-bottom: 8px;
+  margin-top: 2px;
+  padding-bottom: 4px;
 }
 
 .submenu-item {
-  padding: 10px 24px 10px 56px; /* Indented to align with text above */
-  font-size: 0.9rem;
-  color: #666;
+  padding: 8px 16px 8px 48px; /* Indented */
+  margin: 0 12px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  color: #777;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  transition: color 0.2s;
+  transition: all 0.2s;
 }
 
 .submenu-item:hover {
-  color: #7b00ff;
+  background-color: #f9f9f9;
+  color: #333;
 }
 
 .submenu-item.sub-active {
   color: #7b00ff;
   font-weight: 600;
+  background-color: rgba(123, 0, 255, 0.05);
 }
 
 .sub-badge {
   font-size: 0.65rem;
-  color: #fff;
+  color: #555;
+  background-color: #eee;
   padding: 2px 6px;
   border-radius: 4px;
   font-weight: 700;
@@ -127,9 +155,4 @@
   text-align: center;
   background-color: #fcfcfc;
   margin-top: auto; /* Push to bottom if flex container */
-}
-
-.aws-brand {
-  color: #FF9900; /* AWS Orange */
-  font-weight: 700;
 }

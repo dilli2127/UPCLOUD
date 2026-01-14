@@ -8,7 +8,7 @@ const GpuServers = () => {
         <h1>GPU Servers</h1>
         <p className="gpu-description">
           GPU Servers are ideal for demanding workloads such as AI, machine learning, and high-performance computing.
-          Deploy your first GPU Server to unlock accelerated computing power on UpCloud.
+          Deploy your first GPU Server to unlock accelerated computing power on AWS Private Cloud.
         </p>
         
         <div className="gpu-actions">

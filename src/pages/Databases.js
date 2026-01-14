@@ -10,7 +10,7 @@ const Databases = () => {
          
          <div className="db-description">
            <p>
-             Managed Databases enable you to accelerate application innovation through a modern, fully-managed open source database infrastructure immediately deployable on UpCloud.
+             Managed Databases enable you to accelerate application innovation through a modern, fully-managed open source database infrastructure immediately deployable on AWS Private Cloud.
            </p>
            <p>Below is the list of databases we offer.</p>
          </div>

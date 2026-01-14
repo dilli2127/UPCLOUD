@@ -23,7 +23,7 @@ const PeopleAccounts = () => {
 
       <div className="pa-content">
          <p className="pa-desc">
-            The main account holder can edit their account details as well as create and manage subaccount to grant access to their UpCloud services.
+            The main account holder can edit their account details as well as create and manage subaccount to grant access to their AWS Private Cloud services.
          </p>
 
          <div className="pa-actions">

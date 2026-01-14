@@ -12,7 +12,7 @@ const LoadBalancerServices = () => {
              Managed Load Balancer enables you to distribute traffic across multiple servers. Each load balancer sits between client devices and backend servers, receiving and then distributing incoming requests to any available server capable of fulfilling them.
            </p>
            <p className="lb-promo">
-             <span className="purple-text">UpCloud Essentials complimentary Load Balancer!</span><br/>
+             <span className="purple-text">AWS Essentials complimentary Load Balancer!</span><br/>
              Try out our free Essential Load Balancer – to ensure your applications are always available and scalable is paramount, and we're making that easier for you.
            </p>
          </div>

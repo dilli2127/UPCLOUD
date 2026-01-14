@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { 
   LayoutDashboard, Server, HardDrive, Network, Database, 
-  Scale, Box, Lock, Code, Users, BarChart2, Zap
+  Scale, Box, Lock, Code, Users, BarChart2, Zap, Cloud
 } from 'lucide-react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import './Sidebar.css';
@@ -105,7 +105,7 @@ const Sidebar = () => {
     <div className="sidebar">
       <div className="sidebar-logo">
         <a href="/">
-          <span className="logo-icon">☁️</span> AWS Private Cloud
+          <Cloud size={24} className="logo-icon" style={{color: '#7b00ff'}} /> AWS Private Cloud
         </a>
       </div>
       
@@ -160,7 +160,14 @@ const Sidebar = () => {
       </div>
       
       <div className="sidebar-footer">
-        Powered by <span className="aws-brand">AWS</span>
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px' }}>
+          <span>Powered by</span>
+          <img 
+            src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" 
+            alt="AWS" 
+            style={{ height: '24px', opacity: 0.8 }} 
+          />
+        </div>
       </div>
     </div>
   );

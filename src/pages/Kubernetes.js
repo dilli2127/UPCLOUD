@@ -12,10 +12,10 @@ const Kubernetes = () => {
             Kubernetes is a container orchestration system for automating, managing and scaling software deployment. Managed Kubernetes allows you to easily create Kubernetes clusters without having to care about low level details.
            </p>
            <p>
-            The UpCloud Managed Kubernetes is certified by the Cloud Native Computing Foundation's (CNCF) <a href="#">Certified Kubernetes Conformance Program</a>. A CNCF-compliant Kubernetes product ensures consistent functionality and allows you to move workloads between compliant platforms with ease.
+            The AWS Private Cloud Managed Kubernetes is certified by the Cloud Native Computing Foundation's (CNCF) <a href="#">Certified Kubernetes Conformance Program</a>. A CNCF-compliant Kubernetes product ensures consistent functionality and allows you to move workloads between compliant platforms with ease.
            </p>
            <p className="k8s-promo">
-             <span className="purple-text">UpCloud Essentials complimentary Kubernetes control plane!</span><br/>
+             <span className="purple-text">AWS Essentials complimentary Kubernetes control plane!</span><br/>
              Try out our free Essential Kubernetes – we want you to deploy and manage your containerized applications with the agility and efficiency you deserve.
            </p>
          </div>

@@ -29,42 +29,33 @@ const DeveloperTools = () => {
          </div>
 
          {/* OpenTofu Card */}
-         <div className="dt-card">
-            <div className="dt-card-content">
-               <span className="dt-tag">INFRASTRUCTURE AS CODE</span>
-               <h2>OpenTofu & Terraform providers</h2>
-               <p>
-                  Manage your infrastructure as code using the UpCloud OpenTofu & UpCloud Terraform providers.
-               </p>
-               <div className="dt-btn-group">
-                  <button className="btn-dt-action outline">OpenTofu registry</button>
-                  <button className="btn-dt-action outline">Terraform registry</button>
-               </div>
+             <div className="tool-card">
+              <div className="tool-content">
+                <h3>OpenTofu & Terraform</h3>
+                <p>
+                  Manage your infrastructure as code using the AWS Private Cloud OpenTofu & AWS Private Cloud Terraform providers.
+                </p>
+                <div className="code-snippet">
+                  <span className="c-kwd">resource</span> "aws_private_server" "server1" {'{'}<br/>
+                  &nbsp;&nbsp;<span className="c-prop">zone</span> = "uk-lon1"<br/>
+                  &nbsp;&nbsp;<span className="c-prop">plan</span> = "1xCPU-1GB"<br/>
+                  {'}'}
+                </div>
+                <div className="tool-cta">
+                   <a href="#" className="text-link">OpenTofu Registry &rarr;</a>
+                   <a href="#" className="text-link">Terraform Registry &rarr;</a>
+                </div>
+              </div>
             </div>
-            <div className="dt-card-visual code-bg">
-               <pre>
-                  <code>
-                    <span className="c-kwd">resource</span> "upcloud_server" "server1" {'{'}<br/>
-                    &nbsp;&nbsp;hostname = "terraform.example.com"<br/>
-                    &nbsp;&nbsp;zone = "nl-ams1"<br/>
-                    &nbsp;&nbsp;plan = "1xCPU-1GB"<br/><br/>
-                    &nbsp;&nbsp;template {'{'}<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;size = 25<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;storage = "01000..."<br/>
-                    &nbsp;&nbsp;{'}'}<br/>
-                    {'}'}
-                  </code>
-               </pre>
-            </div>
-         </div>
 
          {/* CLI Card */}
-         <div className="dt-card">
-            <div className="dt-card-content">
-               <span className="dt-tag">UPCLOUD CLI</span>
-               <h2>Command line interface</h2>
+            <div className="tool-card">
+              <div className="tool-content">
+               <h3>Command-Line Interface</h3>
+               <span className="dt-tag">AWS PRIVATE CLOUD CLI</span>
                <p>
-                  <code>upctl</code> provides a command-line interface to UpCloud services.
+                  <code>awsctl</code> provides a command-line interface to AWS Private Cloud services.
+                  It allows you to manage your resources directly from your terminal.
                </p>
                <button className="btn-dt-action outline">Learn more</button>
             </div>

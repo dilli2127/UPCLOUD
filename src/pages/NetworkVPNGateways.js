@@ -13,7 +13,7 @@ const NetworkVPNGateways = () => {
            <h1>VPN Gateways</h1>
         </div>
         <p className="vpn-description">
-          VPN Gateways connect UpCloud SDN Private Networks to external VPN endpoints using IPSec site-to-site tunnels.
+          VPN Gateways connect AWS Private Cloud SDN Private Networks to external VPN endpoints using IPSec site-to-site tunnels.
         </p>
 
         <div className="vpn-actions">
