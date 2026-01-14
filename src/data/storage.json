@@ -22,5 +22,13 @@
     "size": "40 GB",
     "attachedTo": "naduvan org",
     "location": "IN-MUM1"
+  },
+  {
+    "id": "uuid-storage-masm",
+    "name": "masm storage",
+    "tier": "MaxIOPS",
+    "size": "500 GB",
+    "attachedTo": "masm1",
+    "location": "IN-MUM1"
   }
 ]

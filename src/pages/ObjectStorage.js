@@ -1,32 +1,58 @@
 import React from 'react';
+import { Database, Plus, MoreVertical, Settings, Globe, Lock } from 'lucide-react';
+import objectStorageData from '../data/object_storage.json';
 import './ObjectStorage.css';
 
 const ObjectStorage = () => {
   return (
-    <div className="obj-page">
-      <div className="obj-content-left">
-         <h1 className="obj-title">Object Storage</h1>
-         
-         <div className="obj-description">
-           <p>
-             Managed Object Storage enables effortless delivery of content, such as static assets, and storing of data, such as backups and logs. It can be used via a HTTP API or web browser. Storage and plan will scale automatically up and down in 250 GB units based on actual usage. Plans start at <span className="price-highlight">€5.00</span> per month.
-           </p>
-         </div>
-
-         <div className="obj-actions">
-           <button className="btn-create-obj">Create new Object Storage</button>
-           <button className="btn-learn-obj">Learn more</button>
-         </div>
+    <div className="obj-page-list">
+      <div className="obj-header">
+        <div className="obj-title-section">
+          <div className="icon-box-purple">
+            <Database size={24} color="#7b00ff" />
+          </div>
+          <h1>Object Storage</h1>
+        </div>
+        <p className="obj-subtitle">
+            Scalable, S3-compatible cloud storage for your static assets and backups.
+        </p>
+        <button className="btn-create-obj-list">
+            <Plus size={18} /> Create Object Storage
+        </button>
       </div>
-      
-      <div className="obj-visual">
-         {/* Simple CSS representation of the bucket icon in screenshot */}
-         <div className="bucket-icon-large">
-            <div className="bucket-rim"></div>
-            <div className="bucket-body"></div>
-            <div className="bucket-handle-line"></div>
-            <div className="bucket-handle-circle"></div>
-         </div>
+
+      <div className="obj-table-container">
+        <div className="obj-table-header">
+            <div className="col-obj-name">NAME</div>
+            <div className="col-obj-region">REGION</div>
+            <div className="col-obj-access">ACCESS</div>
+            <div className="col-obj-size">SIZE</div>
+            <div className="col-obj-files">FILES</div>
+            <div className="col-obj-actions"></div>
+        </div>
+        
+        {objectStorageData.map(item => (
+            <div className="obj-table-row" key={item.id}>
+                <div className="col-obj-name">
+                    <span className="obj-name-text">{item.name}</span>
+                    <span className="obj-uuid">{item.id}</span>
+                </div>
+                <div className="col-obj-region">{item.region}</div>
+                <div className="col-obj-access">
+                    {item.access === 'Public' ? (
+                        <span className="badge-public"><Globe size={12}/> Public</span>
+                    ) : (
+                        <span className="badge-private"><Lock size={12}/> Private</span>
+                    )}
+                </div>
+                <div className="col-obj-size">{item.size}</div>
+                <div className="col-obj-files">{item.files}</div>
+                <div className="col-obj-actions">
+                    <button className="btn-icon"><Settings size={16}/></button>
+                    <button className="btn-icon"><MoreVertical size={16}/></button>
+                </div>
+            </div>
+        ))}
       </div>
     </div>
   );

@@ -1,0 +1,34 @@
+[
+  {
+    "id": "obj-uuid-1",
+    "name": "naduvan-obj-store",
+    "region": "IN-MUM1",
+    "access": "Public",
+    "size": "400 GB",
+    "files": "12.5k"
+  },
+  {
+    "id": "obj-uuid-2",
+    "name": "naduvan-dev-assets",
+    "region": "IN-MUM1",
+    "access": "Private",
+    "size": "50 GB",
+    "files": "2.1k"
+  },
+   {
+    "id": "obj-uuid-3",
+    "name": "naduvan-prod-backup",
+    "region": "IN-MUM1",
+    "access": "Private",
+    "size": "150 GB",
+    "files": "500"
+  },
+  {
+    "id": "obj-uuid-4",
+    "name": "masm-prod",
+    "region": "IN-MUM1",
+    "access": "Public",
+    "size": "500 GB",
+    "files": "8.2k"
+  }
+]
