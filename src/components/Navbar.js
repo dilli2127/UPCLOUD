@@ -19,7 +19,9 @@ const Navbar = () => {
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="container nav-container">
         <div className="logo">
-          <Link to="/">UpCloud</Link>
+          <a href="/">
+            <span className="logo-icon">☁️</span> AWS Private Cloud
+          </a>
         </div>
 
         <div className="mobile-toggle" onClick={() => setIsOpen(!isOpen)}>
