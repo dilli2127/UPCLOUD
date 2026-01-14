@@ -5,6 +5,7 @@ import './UsageBillingLog.css';
 import { billingService } from '../services/billingService';
 
 const ALL_BILLING_DATA = {
+  'Last 5 Months': [],
   'January 2026': [],
   'December 2025': [],
   'November 2025': [],
@@ -21,7 +22,7 @@ const ALL_BILLING_DATA = {
 };
 
 const UsageBillingLog = () => {
-  const [period, setPeriod] = useState('January 2026');
+  const [period, setPeriod] = useState('Last 5 Months');
   const [isPeriodOpen, setIsPeriodOpen] = useState(false);
   const [items, setItems] = useState([]);
   const [paymentHistory, setPaymentHistory] = useState([]);
@@ -33,8 +34,15 @@ const UsageBillingLog = () => {
     const fetchData = async () => {
       setIsLoading(true);
       try {
-        // Fetch Billing Log
-        const data = await billingService.getBillingData(period);
+        let data = [];
+        if (period === 'Last 5 Months') {
+           const months = Object.keys(ALL_BILLING_DATA).filter(k => k !== 'Last 5 Months').slice(0, 5);
+           const promises = months.map(m => billingService.getBillingData(m));
+           const results = await Promise.all(promises);
+           data = results.flat();
+        } else {
+           data = await billingService.getBillingData(period);
+        }
         setItems(data);
         
         // Fetch Dashboard Summary
@@ -237,9 +245,7 @@ const UsageBillingLog = () => {
          </div>
       </div>
 
-      <div className="bl-total">
-         Total <span className="total-amount">{currencySymbol}{totalAmount.toLocaleString('en-US', { minimumFractionDigits: 2 })}</span>
-      </div>
+
 
       <div className="bl-list" style={{marginBottom: '40px'}}>
          <div className="list-header">
