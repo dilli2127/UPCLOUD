@@ -25,7 +25,7 @@ export const billingService = {
     // In a real app: return axios.get(`/api/billing?period=${period}`)
     
     // Check localStorage "database" simulation, or fallback to default
-    const db = JSON.parse(localStorage.getItem('simulated_db')) || FULL_DB_DATA;
+    const db = JSON.parse(localStorage.getItem('simulated_billing_db_v2')) || FULL_DB_DATA;
     return db[period] || [];
   },
 
@@ -33,7 +33,7 @@ export const billingService = {
   async updateCharge(period, itemId, newCharge) {
     await delay(400); // Fake saving delay
     
-    const db = JSON.parse(localStorage.getItem('simulated_db')) || FULL_DB_DATA;
+    const db = JSON.parse(localStorage.getItem('simulated_billing_db_v2')) || FULL_DB_DATA;
     const periodList = db[period] || [];
     
     // Find and update
@@ -42,14 +42,14 @@ export const billingService = {
     );
     
     db[period] = updatedList;
-    localStorage.setItem('simulated_db', JSON.stringify(db));
+    localStorage.setItem('simulated_billing_db_v2', JSON.stringify(db));
     
     return updatedList;
   },
 
   async getDashboardSummary() {
     await delay(300);
-    const db = JSON.parse(localStorage.getItem('simulated_db')) || FULL_DB_DATA;
+    const db = JSON.parse(localStorage.getItem('simulated_billing_db_v2')) || FULL_DB_DATA;
     
     // Logic to find "Month Usage": Sum charges for the entire latest period
     const latestPeriod = 'January 2026';
