@@ -25,8 +25,13 @@ const Login = () => {
     <div className="login-container">
       <div className="login-left">
         <div className="login-logo">
-          <a href="/">
-            <span className="logo-icon">☁️</span> AWS Private Cloud
+          <a href="/" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '10px' }}>
+            <img 
+              src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" 
+              alt="AWS" 
+              style={{ height: '32px' }} 
+            />
+            <span style={{ fontSize: '1.2rem', fontWeight: '700', color: '#111' }}>Private Cloud</span>
           </a>
         </div>
 

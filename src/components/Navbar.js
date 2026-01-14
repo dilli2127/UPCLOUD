@@ -19,8 +19,13 @@ const Navbar = () => {
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="container nav-container">
         <div className="logo">
-          <a href="/">
-            <span className="logo-icon">☁️</span> AWS Private Cloud
+          <a href="/" style={{ display: 'flex', alignItems: 'center', gap: '10px', textDecoration: 'none' }}>
+            <img 
+              src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" 
+              alt="AWS" 
+              style={{ height: '24px', filter: 'brightness(0) invert(1)' }} 
+            />
+            <span style={{ fontSize: '1.1rem', fontWeight: '600', color: 'white' }}>AWS Private Cloud</span>
           </a>
         </div>
 
