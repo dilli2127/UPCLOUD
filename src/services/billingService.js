@@ -126,12 +126,12 @@ export const billingService = {
 
   async getDashboardSummary() {
     await delay(300);
-    // User requested "month avarege bill 2.5 l"
+    // User requested realistic billing based on current usage
     // Also derive last payment info from history
     const lastPayment = PAYMENT_HISTORY_DATA[0];
     return {
-        dailyUse: "$3,000.00", // Avg
-        balance: "$8,400.00",  // Current pending jan
+        dailyUse: "$600.00", // Avg ($8400 / 14 days)
+        balance: "$8,400.00",  // Current pending jan invoice
         exhaustionDate: "Running Account",
         lastPaymentAmount: lastPayment.payment,
         lastPaymentDate: lastPayment.date

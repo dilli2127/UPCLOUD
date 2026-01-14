@@ -28,10 +28,10 @@ const NoResources = ({ onClick }) => (
   </div>
 );
 
-const StatusBar = ({ count, label, color = "#00b84f" }) => (
+const StatusBar = ({ count, label, color = "#22c55e" }) => (
   <div className="status-bar-container">
     <div className="status-bar">
-      <div className="status-fill" style={{ width: '100%', backgroundColor: color }}></div>
+      <div className="status-fill" style={{ width: '100%', height: '100%', backgroundColor: color }}></div>
     </div>
     <div className="status-info">
       <span className="status-dot" style={{ backgroundColor: color }}></span>
@@ -114,7 +114,13 @@ const Dashboard = () => {
           <WidgetCard title="Billing">
             <div className="billing-content">
               <h2 className="billing-amount">{billingSummary.dailyUse}</h2>
-              <p className="billing-label">Current usage</p>
+              <p className="billing-label">Daily use</p>
+              <div className="billing-graph" style={{ margin: '15px 0', height: '40px' }}>
+                 <svg viewBox="0 0 100 40" width="100%" height="100%" preserveAspectRatio="none" style={{ overflow: 'visible' }}>
+                    <path d="M0,40 Q5,40 10,10 H100" fill="none" stroke="#7b00ff" strokeWidth="2" vectorEffect="non-scaling-stroke" />
+                    <path d="M0,40 Q5,40 10,10 H100 V40 H0 Z" fill="rgba(123, 0, 255, 0.1)" />
+                 </svg>
+              </div>
               <div className="billing-details-link" onClick={() => navigate('/dashboard/usage/billing-log')}>
                   See details
               </div>
@@ -145,7 +151,7 @@ const Dashboard = () => {
           <WidgetCard title="Backups">
              <div className="status-bar-container">
                <div className="status-bar" style={{backgroundColor: '#eee'}}>
-                 <div className="status-fill" style={{ width: '85%', backgroundColor: '#7b00ff' }}></div>
+                 <div className="status-fill" style={{ width: '85%', height: '100%', backgroundColor: '#7b00ff' }}></div>
                </div>
                <div className="status-info" style={{fontSize: '0.8rem'}}>
                  85% of storages have scheduled backups
@@ -195,8 +201,8 @@ const Dashboard = () => {
              <h4>Frequently accessed</h4>
              <div className="freq-item">
                <div className="freq-icon"><Server size={18} color="#7b00ff"/></div>
-               <span className="freq-name">Prod 1</span>
-               <span className="freq-zone">SG-SIN1</span>
+               <span className="freq-name">naduvan prod</span>
+               <span className="freq-zone">IN-MUM1</span>
                <div className="freq-arrow"><ArrowRight size={16} /></div>
              </div>
            </div>
