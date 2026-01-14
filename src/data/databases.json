@@ -1,0 +1,34 @@
+[
+  {
+    "id": "db-uuid-1",
+    "name": "naduvan dev",
+    "type": "PostgreSQL 14",
+    "plan": "2 vCPUs • 4 GB RAM • 80 GB Storage",
+    "status": "Running",
+    "zone": "IN-MUM1"
+  },
+  {
+    "id": "db-uuid-2",
+    "name": "naduvan prod",
+    "type": "PostgreSQL 14",
+    "plan": "8 vCPUs • 32 GB RAM • 320 GB Storage",
+    "status": "Running",
+    "zone": "IN-MUM1"
+  },
+  {
+    "id": "db-uuid-3",
+    "name": "naduvan org",
+    "type": "PostgreSQL 14",
+    "plan": "2 vCPUs • 4 GB RAM • 80 GB Storage",
+    "status": "Running",
+    "zone": "IN-MUM1"
+  },
+  {
+    "id": "db-uuid-4",
+    "name": "masm instance",
+    "type": "MySQL 8",
+    "plan": "3 Nodes (HA) • 4 vCPUs • 16 GB RAM",
+    "status": "Running",
+    "zone": "IN-MUM1"
+  }
+]

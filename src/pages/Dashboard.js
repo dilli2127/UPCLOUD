@@ -76,15 +76,15 @@ const Dashboard = () => {
         {/* Column 1 */}
         <div className="dashboard-col">
           <WidgetCard title="Servers" icon={<Server size={18} />}>
-            <StatusBar count={3} label="Running" />
+            <StatusBar count={7} label="Running" />
           </WidgetCard>
           
           <WidgetCard title="Storage" icon={<HardDrive size={18} />}>
-            <StatusBar count={3} label="Attached" />
+            <StatusBar count={4} label="Attached" />
           </WidgetCard>
           
           <WidgetCard title="Databases" icon={<Database size={18} />}>
-            <NoResources onClick={() => navigate('/dashboard/databases/deploy')} />
+            <StatusBar count={4} label="Running" />
           </WidgetCard>
           
           <WidgetCard title="Kubernetes" icon={<Box size={18} />}>
@@ -99,11 +99,13 @@ const Dashboard = () => {
           </WidgetCard>
           
           <WidgetCard title="Object Storages" icon={<Database size={18} />}>
-            <NoResources onClick={() => navigate('/dashboard/object-storage/deploy')} />
+             <StatusBar count={4} label="Active" />
           </WidgetCard>
           
           <WidgetCard title="Load Balancer" icon={<Box size={18} />}>
-            <NoResources onClick={() => navigate('/dashboard/load-balancer/deploy')} />
+            <div style={{cursor: 'pointer'}} onClick={() => navigate('/dashboard/load-balancer/services')}>
+              <StatusBar count={2} label="Running" />
+            </div>
           </WidgetCard>
         </div>
 
@@ -135,7 +137,7 @@ const Dashboard = () => {
                </svg>
                <div className="transfer-info">
                  <span>Transfer for ongoing month</span>
-                 <strong>132 GiB</strong>
+                 <strong>186 GiB</strong>
                </div>
              </div>
           </WidgetCard>
@@ -143,10 +145,10 @@ const Dashboard = () => {
           <WidgetCard title="Backups">
              <div className="status-bar-container">
                <div className="status-bar" style={{backgroundColor: '#eee'}}>
-                 <div className="status-fill" style={{ width: '67%', backgroundColor: '#7b00ff' }}></div>
+                 <div className="status-fill" style={{ width: '85%', backgroundColor: '#7b00ff' }}></div>
                </div>
                <div className="status-info" style={{fontSize: '0.8rem'}}>
-                 67% of storages have scheduled backups
+                 85% of storages have scheduled backups
                </div>
              </div>
           </WidgetCard>
