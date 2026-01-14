@@ -47,6 +47,10 @@
     max-width: 800px;
 }
 
+.account-content.wide-content {
+    max-width: 1200px;
+}
+
 .section-heading {
     font-size: 1.1rem;
     font-weight: 700;
@@ -159,9 +163,7 @@
 }
 
 /* Billing Tab specific */
-.billing-tab {
-    /* max-width not restricted here to allow full width usage if parent allows */
-}
+/* .billing-tab removed as it was empty */
 
 .billing-card {
     background: white;

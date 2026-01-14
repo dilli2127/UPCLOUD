@@ -1,6 +1,6 @@
+// UsageBillingLog Component - Billing History and Payment Options
 import React, { useState, useEffect } from 'react';
 import { CreditCard, ChevronDown, DownloadCloud, PlayCircle, AlertTriangle, Edit2, Trash2, CreditCard as CardIcon } from 'lucide-react';
-import billingData from '../data/billing_log.json'; 
 import './UsageBillingLog.css';
 import { billingService } from '../services/billingService';
 
