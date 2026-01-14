@@ -26,7 +26,7 @@ const Login = () => {
       <div className="login-left">
         <div className="login-logo">
           <a href="/">
-            <span className="logo-icon">☁️</span> UpCloud
+            <span className="logo-icon">☁️</span> AWS Private Cloud
           </a>
         </div>
 

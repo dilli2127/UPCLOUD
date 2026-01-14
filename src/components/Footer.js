@@ -53,7 +53,7 @@ const Footer = () => {
               <a href="#"><Facebook size={20} /></a>
             </div>
             <p style={{ marginTop: '20px', color: '#666', fontSize: '0.9rem' }}>
-              &copy; {new Date().getFullYear()} UpCloud Ltd.
+              &copy; {new Date().getFullYear()} AWS Private Cloud Inc.
             </p>
           </div>
         </div>

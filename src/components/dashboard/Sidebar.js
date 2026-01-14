@@ -89,7 +89,7 @@ const Sidebar = () => {
          { label: 'Network Transfer', path: '/dashboard/usage/network-transfer' }
       ]
     },
-    { icon: <Zap size={20} />, label: 'UpCloud Essentials', path: '/dashboard/essentials' },
+    { icon: <Zap size={20} />, label: 'AWS Essentials', path: '/dashboard/essentials' },
   ];
 
   /* Logic to determine if a parent menu should be expanded/active */
@@ -105,7 +105,7 @@ const Sidebar = () => {
     <div className="sidebar">
       <div className="sidebar-logo">
         <a href="/">
-          <span className="logo-icon">☁️</span> UpCloud
+          <span className="logo-icon">☁️</span> AWS Private Cloud
         </a>
       </div>
       

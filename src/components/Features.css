@@ -1,58 +1,137 @@
 .features-section {
-  padding: 100px 0;
+  padding: 120px 0;
+  background-color: #05010d; /* Very deep dark bg */
+  position: relative;
+  overflow: hidden;
+}
+
+/* Subtle background glow blobs */
+.features-section::before {
+  content: '';
+  position: absolute;
+  top: 20%;
+  left: -10%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(123, 0, 255, 0.07) 0%, transparent 70%);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.features-section::after {
+  content: '';
+  position: absolute;
+  bottom: 20%;
+  right: -5%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(50, 200, 255, 0.05) 0%, transparent 70%);
+  z-index: 0;
+  pointer-events: none;
 }
 
 .text-center {
   text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.section-title {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+  background: linear-gradient(135deg, #fff 0%, #a88eff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
 }
 
 .features-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 40px;
-  margin-top: 60px;
+  gap: 30px;
+  margin-top: 80px;
+  position: relative;
+  z-index: 1;
 }
 
 .feature-card {
-  background: var(--bg-card);
+  background: rgba(255, 255, 255, 0.03);
   padding: 40px;
-  border-radius: 20px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border: 1px solid transparent;
+  border-radius: 24px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  position: relative;
+  overflow: hidden;
 }
 
+/* Hover Effect - simplified for reliability */
 .feature-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-  border-color: var(--primary-purple);
+  background: rgba(255, 255, 255, 0.05); /* Slightly lighter glass */
+  border-color: #7b00ff; /* Solid purple border */
+  box-shadow: 
+    0 20px 40px rgba(0,0,0,0.4),
+    0 0 20px rgba(123, 0, 255, 0.4); /* Glow effect */
+}
+
+/* Remove problematic mask pseudo-element */
+.feature-card::before {
+  display: none;
 }
 
 .feature-icon {
-  color: var(--primary-purple);
-  margin-bottom: 24px;
+  color: #a88eff;
+  margin-bottom: 30px;
+  background: rgba(168, 142, 255, 0.1);
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  transition: all 0.3s;
+}
+
+.feature-card:hover .feature-icon {
+  background: #7b00ff;
+  color: #fff;
+  transform: rotate(5deg) scale(1.1);
+  box-shadow: 0 0 15px rgba(123, 0, 255, 0.6);
 }
 
 .feature-card h3 {
   font-size: 1.5rem;
   margin-bottom: 16px;
-  font-weight: 600;
+  font-weight: 700;
+  color: #fff;
 }
 
 .feature-card p {
-  color: var(--text-gray);
-  margin-bottom: 24px;
-  line-height: 1.6;
+  color: #aaa;
+  margin-bottom: 30px;
+  line-height: 1.7;
+  transition: color 0.3s;
+}
+
+.feature-card:hover p {
+  color: #ddd; /* Brighten text on hover */
 }
 
 .feature-link {
-  color: var(--primary-purple);
+  color: #fff;
   font-weight: 600;
   display: inline-flex;
   align-items: center;
-  gap: 5px;
-  transition: gap 0.2s;
+  gap: 8px;
+  transition: all 0.2s;
+  font-size: 0.95rem;
 }
 
 .feature-link:hover {
-  gap: 10px;
+  gap: 12px;
+  color: #d4c2ff;
 }

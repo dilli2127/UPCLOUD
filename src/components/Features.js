@@ -33,7 +33,7 @@ const Features = () => {
   return (
     <section className="features-section">
       <div className="container">
-        <h2 className="section-title text-center">Why UpCloud?</h2>
+        <h2 className="section-title text-center">Why AWS Private Cloud?</h2>
         <div className="features-grid">
           {features.map((feature, index) => (
             <div className="feature-card" key={index}>

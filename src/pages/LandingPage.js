@@ -11,7 +11,6 @@ function LandingPage() {
     <div className="landing-page">
       <Navbar />
       <Hero />
-      <SocialProof />
       <Features />
       <ProductGrid />
       <Footer />
