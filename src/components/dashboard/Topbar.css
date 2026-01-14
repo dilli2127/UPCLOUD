@@ -63,6 +63,7 @@
   cursor: pointer;
   position: relative;
   user-select: none;
+  color: #333;
 }
 
 .username {

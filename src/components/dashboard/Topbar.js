@@ -94,6 +94,7 @@ const Topbar = () => {
           className={`user-profile ${isDropdownOpen ? 'active' : ''}`} 
           onClick={() => setIsDropdownOpen(!isDropdownOpen)}
           ref={dropdownRef}
+          title="User Profile"
         >
           <span className="username">naduvantech</span>
           <ChevronDown size={16} className={`chevron-icon ${isDropdownOpen ? 'rotate' : ''}`} />
