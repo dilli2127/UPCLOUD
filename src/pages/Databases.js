@@ -18,41 +18,53 @@ const Databases = () => {
          <div className="db-list">
             <div className="db-item">
                <div className="db-icon">
-                  <Database size={24} />
+                  <Database size={24} color="#7b00ff"/>
                </div>
                <div className="db-info">
-                  <h3>PostgreSQL</h3>
-                  <p>PostgreSQL - Object-Relational Database Management System.</p>
+                  <h3>naduvan dev</h3>
+                  <p>PostgreSQL 14 • 2 vCPUs • 4 GB RAM • 80 GB Storage</p>
+               </div>
+               <div className="db-status">
+                   <span className="status-dot running"></span> Running
                </div>
             </div>
 
             <div className="db-item">
                <div className="db-icon">
-                  <Database size={24} /> {/* Placeholder for dolphin */}
+                  <Database size={24} color="#7b00ff"/>
                </div>
                <div className="db-info">
-                  <h3>MySQL</h3>
-                  <p>MySQL - Relational Database Management System.</p>
+                  <h3>naduvan prod</h3>
+                  <p>PostgreSQL 14 • 8 vCPUs • 32 GB RAM • 320 GB Storage</p>
+               </div>
+               <div className="db-status">
+                   <span className="status-dot running"></span> Running
                </div>
             </div>
 
             <div className="db-item">
                <div className="db-icon">
-                  <HardDrive size={24} /> {/* Placeholder for Valkey */}
+                  <Database size={24} color="#7b00ff"/>
                </div>
                <div className="db-info">
-                  <h3>Valkey</h3>
-                  <p>Valkey - In-Memory Data Structure Store. <a href="#">Learn more...</a></p>
+                  <h3>naduvan org</h3>
+                  <p>PostgreSQL 14 • 2 vCPUs • 4 GB RAM • 80 GB Storage</p>
+               </div>
+               <div className="db-status">
+                   <span className="status-dot running"></span> Running
                </div>
             </div>
             
             <div className="db-item">
                <div className="db-icon">
-                  <Search size={24} /> {/* Placeholder for OpenSearch */}
+                  <Database size={24} color="#7b00ff"/>
                </div>
                <div className="db-info">
-                  <h3>OpenSearch</h3>
-                  <p>OpenSearch - Search & Analyze Data in Real Time.</p>
+                  <h3>masm instance</h3>
+                  <p>MySQL 8 • 3 Nodes (HA/Replicas) • 4 vCPUs • 16 GB RAM</p>
+               </div>
+               <div className="db-status">
+                   <span className="status-dot running"></span> Running (3 Instances)
                </div>
             </div>
 

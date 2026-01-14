@@ -1,15 +1,28 @@
 [
   {
     "year": 2026,
-    "total": "€25.91",
+    "total": "$8,400.00",
     "months": [
-      { "name": "January", "cost": "€25.91", "status": "Ongoing" }
+      { "name": "January", "cost": "$8,400.00", "status": "Ongoing" }
     ]
   },
   {
     "year": 2025,
-    "total": "",
-    "months": [] 
+    "total": "$42,120.00",
+    "months": [
+       { "name": "December", "cost": "$10,080.00", "status": "Finalized" },
+       { "name": "November", "cost": "$3,360.00", "status": "Finalized" },
+       { "name": "October", "cost": "$3,240.00", "status": "Finalized" },
+       { "name": "September", "cost": "$3,600.00", "status": "Finalized" },
+       { "name": "August", "cost": "$2,400.00", "status": "Finalized" },
+       { "name": "July", "cost": "$3,000.00", "status": "Finalized" },
+       { "name": "June", "cost": "$2,640.00", "status": "Finalized" },
+       { "name": "May", "cost": "$3,480.00", "status": "Finalized" },
+       { "name": "April", "cost": "$2,520.00", "status": "Finalized" },
+       { "name": "March", "cost": "$3,120.00", "status": "Finalized" },
+       { "name": "February", "cost": "$2,760.00", "status": "Finalized" },
+       { "name": "January", "cost": "$2,400.00", "status": "Finalized" }
+    ] 
   },
   {
     "year": 2024,

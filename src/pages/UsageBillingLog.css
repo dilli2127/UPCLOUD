@@ -7,6 +7,7 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
+  margin-top: 30px;
 }
 
 .bl-title {
@@ -21,6 +22,382 @@
   color: #111;
 }
 
+/* Status Card */
+.status-card {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  padding: 25px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.status-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #111;
+}
+
+.status-metrics {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.metric-item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.metric-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.metric-value {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #7b00ff;
+}
+
+.metric-value.black {
+  color: #111;
+}
+
+.status-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #eee;
+  padding-top: 15px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.btn-download-text {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: none;
+  border: none;
+  color: #333;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* Payment History */
+.payment-history-section {
+  margin-bottom: 40px;
+}
+.ph-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #111;
+}
+
+.ph-table {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+}
+
+/* Common List Header */
+.list-header {
+  display: flex;
+  padding: 15px 24px;
+  background-color: #fafafa;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #999;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+/* Payment Options Section */
+.payment-options-section {
+    margin-bottom: 40px;
+}
+
+.warning-box {
+    background-color: #fff9db;
+    border: 1px solid #ffec99;
+    border-left: 4px solid #fcc419;
+    padding: 15px 20px;
+    margin-bottom: 25px;
+    border-radius: 4px;
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+}
+
+.warning-content h3 {
+    font-size: 0.95rem;
+    font-weight: 700;
+    margin: 0 0 5px 0;
+    color: #444;
+}
+
+.warning-content p {
+    font-size: 0.9rem;
+    color: #555;
+    margin: 0;
+}
+
+.payment-methods-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.pm-box {
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.pm-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.pm-header h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #111;
+    margin: 0;
+}
+
+.paused-alert {
+    background: #ffe066;
+    background: linear-gradient(to right, #ffe066, #ffec99);
+    padding: 10px 15px;
+    border-radius: 4px;
+    font-weight: 600;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+}
+
+.btn-resume {
+    background: transparent;
+    border: 1px solid #333;
+    padding: 4px 10px;
+    border-radius: 2px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.pm-info-text {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.highlight-amt {
+    color: #7b00ff;
+    font-weight: 700;
+}
+
+.card-preview {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.card-info-row {
+  display: flex; 
+  align-items: center; 
+  gap: 10px;
+}
+
+.total-pay-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.total-label {
+    font-size: 0.9rem;
+    color: #888;
+}
+
+.total-value-box {
+    text-align: right;
+}
+
+.total-value {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.vat-text {
+    font-size: 0.75rem;
+    color: #999;
+}
+
+.btn-make-payment {
+    background: #7b00ff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+    width: fit-content;
+}
+.btn-make-payment:hover {
+    background: #6a00e0;
+}
+
+/* Saved Cards */
+.saved-cards-section {
+    margin-bottom: 40px;
+}
+.cards-list {
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+}
+.card-item-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 1px solid #eee;
+    font-size: 0.95rem;
+    color: #333;
+}
+.card-item-row:last-child {
+    border-bottom: none;
+}
+.card-brand {
+    font-weight: 600;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.card-expiry {
+    color: #666;
+    margin-right: 20px;
+}
+.btn-trash {
+    background: none;
+    border: none;
+    color: #999;
+    cursor: pointer;
+}
+.btn-trash:hover {
+    color: #d00;
+}
+.btn-show-more {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    text-align: center;
+    background: none;
+    border: none;
+    border-top: 1px solid #eee;
+    color: #7b00ff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* Columns */
+.col-ph-invoice {
+  flex: 1.5;
+  color: #555;
+}
+.col-ph-date {
+  flex: 1;
+}
+.col-ph-deposit {
+  flex: 1;
+}
+.col-ph-payment {
+  flex: 1;
+}
+.col-ph-type {
+  flex: 2;
+}
+.col-ph-status {
+  flex: 1;
+}
+.col-ph-action {
+  flex: 0.5;
+  text-align: right;
+}
+
+.ph-row {
+  display: flex;
+  padding: 18px 24px;
+  border-bottom: 1px solid #e0e0e0;
+  align-items: center;
+  font-size: 0.9rem;
+  color: #333;
+}
+.ph-row:last-child {
+  border-bottom: none;
+}
+
+.status-badge {
+  background: #e6fcf5;
+  color: #0c9e6f;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+/* Billing Log Columns Redefine */
+.col-bl-inv { flex: 1.5; font-weight: 500; color: #555; }
+.col-bl-date { flex: 1.5; color: #333; }
+.col-bl-actions { flex: 0.8; display: flex; align-items: center; justify-content: flex-end; }
+.col-bl-res { flex: 2; color: #333; }
+.col-bl-charge { flex: 1.5; font-weight: 600; color: #111; }
+.col-bl-desc { flex: 3; color: #555; }
+
+.icon-btn-download {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 4px;
+}
+.icon-btn-download:hover {
+  background-color: #f0f0f0;
+}
+
+/* Period Selector */
 .bl-period-selector {
   display: flex;
   align-items: center;
@@ -29,7 +406,7 @@
 }
 
 .period-label {
- color: #555;
+  color: #555;
 }
 
 .period-dropdown-wrapper {
@@ -54,7 +431,7 @@
   background: white;
   border: 1px solid #e0e0e0;
   border-radius: 4px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   min-width: 150px;
   z-index: 50;
 }
@@ -81,9 +458,8 @@
   font-size: 1.1rem;
   font-weight: 600;
   color: #333;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
-
 .total-amount {
   color: #7b00ff;
   font-weight: 700;
@@ -91,7 +467,6 @@
   margin-left: 8px;
 }
 
-/* List */
 .bl-list {
   background: white;
   border: 1px solid #e0e0e0;
@@ -115,35 +490,30 @@
   border-bottom: none;
 }
 
-.col-bl-date { flex: 1.5; font-weight: 500; }
-.col-bl-res { flex: 2; color: #333; }
-.col-bl-charge { flex: 1.5; font-weight: 600; color: #111; }
-.col-bl-desc { flex: 3; color: #555; }
-
 .link-purple {
   color: #7b00ff;
   cursor: pointer;
 }
 
 .charge-input {
-    border: 1px solid transparent;
-    background: transparent;
-    font-size: inherit;
-    font-weight: inherit;
-    color: inherit;
-    width: 100%;
-    padding: 4px;
-    border-radius: 4px;
-    transition: border-color 0.2s, background-color 0.2s;
+  border: 1px solid transparent;
+  background: transparent;
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+  width: 100%;
+  padding: 4px;
+  border-radius: 4px;
+  transition: border-color 0.2s, background-color 0.2s;
 }
 
 .charge-input:hover {
-    border-color: #e0e0e0;
-    background-color: #fcfcfc;
+  border-color: #e0e0e0;
+  background-color: #fcfcfc;
 }
 
 .charge-input:focus {
-    outline: none;
-    border-color: #7b00ff;
-    background-color: white;
+  outline: none;
+  border-color: #7b00ff;
+  background-color: white;
 }

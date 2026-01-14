@@ -1,26 +1,26 @@
 [
   {
-    "id": "01a41983-09ed-48ed-88c6-9aba98f40bcd",
-    "name": "new-vpn",
+    "id": "uuid-storage-dev",
+    "name": "naduvan dev storage",
     "tier": "MaxIOPS",
-    "size": "25 GB",
-    "attachedTo": "VPN",
-    "location": "SG-SIN1"
+    "size": "40 GB",
+    "attachedTo": "naduvan dev",
+    "location": "IN-MUM1"
   },
   {
-    "id": "01961451-6cb7-41a4-b401-c0dbb1d7e701",
-    "name": "Prod 1 Device 1",
+    "id": "uuid-storage-prod",
+    "name": "naduvan prod storage",
     "tier": "MaxIOPS",
     "size": "160 GB",
-    "attachedTo": "Prod 1",
-    "location": "SG-SIN1"
+    "attachedTo": "naduvan prod",
+    "location": "IN-MUM1"
   },
   {
-    "id": "0141dbf8-de0b-4fda-584b-ce1c744a58a9",
-    "name": "ubuntu-1cpu-1gb-uk-lon1 Device 1",
+    "id": "uuid-storage-org",
+    "name": "naduvan org storage",
     "tier": "Standard",
-    "size": "10 GB",
-    "attachedTo": "ubuntu-1cpu-1gb-uk-lon1",
-    "location": "UK-LON1"
+    "size": "40 GB",
+    "attachedTo": "naduvan org",
+    "location": "IN-MUM1"
   }
 ]

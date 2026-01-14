@@ -1,35 +1,79 @@
 [
   {
-    "id": "uuid-1",
+    "id": "uuid-masm-1",
     "status": "running",
-    "name": "Prod 1",
-    "os": "Ubuntu Server 22.04 LTS (Jammy Jellyfish)",
-    "ip": "95.111.200.234",
+    "name": "masm1",
+    "os": "Ubuntu Server 22.04 LTS",
+    "ip": "10.1.0.101",
     "cpu": "4 cores",
-    "storage": "160 GB",
+    "storage": "80 GB",
     "memory": "8 GB",
-    "location": "SG-SIN1"
+    "location": "IN-MUM1"
   },
   {
-    "id": "uuid-2",
+    "id": "uuid-masm-2",
     "status": "running",
-    "name": "ubuntu-1cpu-1gb-uk-lon1",
-    "os": "Ubuntu Server 24.04 LTS (Noble Numbat)",
-    "ip": "94.237.123.245",
-    "cpu": "1 core",
-    "storage": "10 GB",
-    "memory": "1 GB",
-    "location": "UK-LON1"
+    "name": "masm2",
+    "os": "Ubuntu Server 22.04 LTS",
+    "ip": "10.1.0.102",
+    "cpu": "4 cores",
+    "storage": "80 GB",
+    "memory": "8 GB",
+    "location": "IN-MUM1"
   },
   {
-    "id": "uuid-3",
+    "id": "uuid-masm-3",
     "status": "running",
-    "name": "VPN",
-    "os": "Custom image",
-    "ip": "95.111.197.33",
-    "cpu": "1 core",
-    "storage": "25 GB",
-    "memory": "1 GB",
-    "location": "SG-SIN1"
+    "name": "masm3",
+    "os": "Ubuntu Server 22.04 LTS",
+    "ip": "10.1.0.103",
+    "cpu": "4 cores",
+    "storage": "80 GB",
+    "memory": "8 GB",
+    "location": "IN-MUM1"
+  },
+  {
+    "id": "uuid-masm-4",
+    "status": "running",
+    "name": "masm4",
+    "os": "Ubuntu Server 22.04 LTS",
+    "ip": "10.1.0.104",
+    "cpu": "4 cores",
+    "storage": "80 GB",
+    "memory": "8 GB",
+    "location": "IN-MUM1"
+  },
+  {
+    "id": "uuid-naduvan-dev",
+    "status": "running",
+    "name": "naduvan dev",
+    "os": "Ubuntu Server 24.04 LTS",
+    "ip": "10.2.0.10",
+    "cpu": "2 cores",
+    "storage": "40 GB",
+    "memory": "4 GB",
+    "location": "IN-MUM1"
+  },
+  {
+    "id": "uuid-naduvan-prod",
+    "status": "running",
+    "name": "naduvan prod",
+    "os": "Red Hat Enterprise Linux 8",
+    "ip": "10.2.0.20",
+    "cpu": "8 cores",
+    "storage": "160 GB",
+    "memory": "32 GB",
+    "location": "IN-MUM1"
+  },
+  {
+    "id": "uuid-naduvan-org",
+    "status": "running",
+    "name": "naduvan org",
+    "os": "Debian 11",
+    "ip": "10.2.0.30",
+    "cpu": "2 cores",
+    "storage": "40 GB",
+    "memory": "4 GB",
+    "location": "IN-MUM1"
   }
 ]

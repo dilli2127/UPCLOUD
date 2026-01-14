@@ -1,8 +1,8 @@
 import serverDataList from '../data/servers.json';
 
 // Initialize localStorage with default data if empty
-if (!localStorage.getItem('upcloud_servers_db')) {
-    localStorage.setItem('upcloud_servers_db', JSON.stringify(serverDataList));
+if (!localStorage.getItem('upcloud_servers_db_v3')) {
+    localStorage.setItem('upcloud_servers_db_v3', JSON.stringify(serverDataList));
 }
 
 const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
@@ -10,19 +10,19 @@ const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 export const serverService = {
     async getServers() {
         await delay(300);
-        return JSON.parse(localStorage.getItem('upcloud_servers_db')) || [];
+        return JSON.parse(localStorage.getItem('upcloud_servers_db_v3')) || [];
     },
 
     async getServerById(id) {
         await delay(200);
-        const servers = JSON.parse(localStorage.getItem('upcloud_servers_db')) || [];
+        const servers = JSON.parse(localStorage.getItem('upcloud_servers_db_v3')) || [];
         // Ensure accurate string comparison for ID
         return servers.find(s => s.id.toString() === id.toString());
     },
 
     async createServer(config) {
         await delay(800); // Simulate provisioning time
-        const servers = JSON.parse(localStorage.getItem('upcloud_servers_db')) || [];
+        const servers = JSON.parse(localStorage.getItem('upcloud_servers_db_v3')) || [];
         
         // Generate new ID (max + 1)
         const newId = servers.length > 0 ? Math.max(...servers.map(s => parseInt(s.id))) + 1 : 1;
@@ -40,28 +40,28 @@ export const serverService = {
         };
 
         const updatedServers = [...servers, newServer];
-        localStorage.setItem('upcloud_servers_db', JSON.stringify(updatedServers));
+        localStorage.setItem('upcloud_servers_db_v3', JSON.stringify(updatedServers));
         return newServer;
     },
 
     async deleteServer(id) {
         await delay(500);
-        const servers = JSON.parse(localStorage.getItem('upcloud_servers_db')) || [];
+        const servers = JSON.parse(localStorage.getItem('upcloud_servers_db_v3')) || [];
         const filtered = servers.filter(s => s.id.toString() !== id.toString());
-        localStorage.setItem('upcloud_servers_db', JSON.stringify(filtered));
+        localStorage.setItem('upcloud_servers_db_v3', JSON.stringify(filtered));
         return true;
     },
 
     async updateServerStatus(id, status) {
         await delay(300);
-        const servers = JSON.parse(localStorage.getItem('upcloud_servers_db')) || [];
+        const servers = JSON.parse(localStorage.getItem('upcloud_servers_db_v3')) || [];
         const updated = servers.map(s => {
             if (s.id.toString() === id.toString()) {
                 return { ...s, status: status };
             }
             return s;
         });
-        localStorage.setItem('upcloud_servers_db', JSON.stringify(updated));
+        localStorage.setItem('upcloud_servers_db_v3', JSON.stringify(updated));
         return updated.find(s => s.id.toString() === id.toString());
     }
 };
